@@ -1,0 +1,14 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: darkgrey;
+    }
+.container{
+    position: relative;
+    height: 50%;
+    width: 50%;
+    top:25%;
+    background-image:url('../img/fondo.jpg');
+    background-size:contain;
+    background-repeat: no-repeat; 
+}
