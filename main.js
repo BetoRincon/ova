@@ -59,7 +59,7 @@ $('#formulario-rbtn').on('click', function () {
 });
 
 $('#formulario-rbtn2').on('click', function () {
-    $('#formulario-rbtn2').css('is')
+    
     var rta = $('input[name=gridRadios2]:checked', '#formulario-rbtn2').val();
     if ( rta == "E") {
         $('#check3').css('visibility', 'visible');
@@ -71,6 +71,40 @@ $('#formulario-rbtn2').on('click', function () {
         $('#check3').css('visibility', 'hidden');
         $('#check4').css('visibility', 'visible');
         $('input[name=gridRadios2]').prop('disabled', true);
+    }   
+});
+
+$('#formulario-rbtn3').on('click', function () {
+    
+    var rta = $('input[name=gridRadios3]:checked', '#formulario-rbtn3').val();
+    
+    if (rta == "A") {
+        $('#check5').css('visibility', 'visible');
+        $('#check6').css('visibility', 'hidden');
+        $('input[name=gridRadios3]').prop('disabled', true);
+        
+    }
+   else if(rta=="E"||rta=="B"||rta=="C"||rta=="D"||rta=="F" ) {
+        $('#check5').css('visibility', 'hidden');
+        $('#check6').css('visibility', 'visible');
+        $('input[name=gridRadios3]').prop('disabled', true);
+    }   
+});
+
+$('#formulario-rbtn4').on('click', function () {
+    
+    var rta = $('input[name=gridRadios4]:checked', '#formulario-rbtn4').val();
+    
+    if (rta == "B") {
+        $('#check7').css('visibility', 'visible');
+        $('#check8').css('visibility', 'hidden');
+        $('input[name=gridRadios4]').prop('disabled', true);
+        
+    }
+   else if(rta=="E"||rta=="A"||rta=="C"||rta=="D"||rta=="F" ) {
+        $('#check7').css('visibility', 'hidden');
+        $('#check8').css('visibility', 'visible');
+        $('input[name=gridRadios4]').prop('disabled', true);
     }   
 });
  
