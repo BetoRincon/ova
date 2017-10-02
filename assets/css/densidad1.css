@@ -26,7 +26,10 @@
 
 #densidad{
     position: relative;
-    height: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
     width: 50%;
     /*border: 1px solid deeppink;*/
     top:12%;
