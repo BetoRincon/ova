@@ -43,6 +43,39 @@ function calcularDensidad() {
    
 }
 
+$('#formulario-rbtn').on('click', function () {
+    var rta = $('input[name=gridRadios]:checked', '#formulario-rbtn').val();
+    if ( rta == "D") {
+        $('#check1').css('visibility', 'visible');
+        $('#check2').css('visibility', 'hidden');
+        $('input[name=gridRadios]').prop('disabled', true);
+    }
+    else if(rta=="A"||rta=="B"||rta=="C"||rta=="E"||rta=="F" ) {
+        $('#check1').css('visibility', 'hidden');
+        $('#check2').css('visibility', 'visible');
+        $('input[name=gridRadios]').prop('disabled', true);
+    }
+   
+});
+
+$('#formulario-rbtn2').on('click', function () {
+    $('#formulario-rbtn2').css('is')
+    var rta = $('input[name=gridRadios2]:checked', '#formulario-rbtn2').val();
+    if ( rta == "E") {
+        $('#check3').css('visibility', 'visible');
+        $('#check4').css('visibility', 'hidden');
+        $('input[name=gridRadios2]').prop('disabled', true);
+        
+    }
+   else if(rta=="A"||rta=="B"||rta=="C"||rta=="D"||rta=="F" ) {
+        $('#check3').css('visibility', 'hidden');
+        $('#check4').css('visibility', 'visible');
+        $('input[name=gridRadios2]').prop('disabled', true);
+    }   
+});
+ 
+
+
 
 
 

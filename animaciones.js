@@ -37,6 +37,10 @@ $adelante.click(function () {
         case ubicacion + "densidad4.html":
             window.location.replace(ubicacion + "densidad5.html");
             break;
+        case ubicacion + "densidad5.html":
+            window.location.replace(ubicacion + "densidad6.html");
+            break;
+        
     }
 });
 
@@ -61,8 +65,11 @@ $atras.click(function () {
         case ubicacion + "densidad4.html":
            window.location.replace(ubicacion+"densidad3.html");
            break;
-           case ubicacion + "densidad5.html":
+        case ubicacion + "densidad5.html":
            window.location.replace(ubicacion+"densidad4.html");
+           break;
+        case ubicacion + "densidad6.html":
+           window.location.replace(ubicacion+"densidad5.html");
            break;
            
    }
