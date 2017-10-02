@@ -30,6 +30,9 @@ $adelante.click(function () {
         case ubicacion + "densidad2.html":
             window.location.replace(ubicacion + "densidad3.html");
             break;
+        case ubicacion + "densidad3.html":
+            window.location.replace(ubicacion + "densidad4.html");
+            break;
     }
 });
 
@@ -50,6 +53,9 @@ $atras.click(function () {
            break;
         case ubicacion + "densidad3.html":
            window.location.replace(ubicacion+"densidad2.html");
+           break;
+        case ubicacion + "densidad4.html":
+           window.location.replace(ubicacion+"densidad3.html");
            break;
            
    }

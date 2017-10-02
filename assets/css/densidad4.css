@@ -1,0 +1,46 @@
+.columna1, .columna2{
+    border: solid 1px blueviolet;
+    padding: 0; 
+    padding: 0;
+    top: 5%;  
+}
+.columna1{
+    width: 30%;
+    height: 73%;
+}
+.columna2{
+    width: 69%;
+    height: 73%;
+}
+#separador{
+   position: relative;
+   float: left;
+   height: 84%;
+   width: 1%;
+   background-color: black; 
+   top: 2%;
+}
+
+#content{
+   position: relative;
+   border: solid 1px greenyellow;
+   height: 100%;
+   width: 100%;
+   padding: 8%;
+}
+#derecha{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 100%;
+    width: 70%;
+    padding: 8%;
+    float: left;
+}
+#izquierda{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 100%;
+    width: 30%;
+    padding: 8%;
+    float: left;
+}
