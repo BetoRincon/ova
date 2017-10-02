@@ -6,6 +6,10 @@
 }
 .columna2{
     width: 48%;
+    padding: 40px;
+}
+#directa{
+    padding: 20px
 }
 #densidad-texto-sup{
     position: relative;
@@ -188,7 +192,8 @@
     float: left;
     height: 70%;
     width: 1%;
-    background-color: black; 
+    background-color: #066595;
+    border-radius: 5px;
     top: 2%;
 }
 /*-------------------------------------------------*/
