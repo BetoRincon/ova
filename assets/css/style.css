@@ -105,8 +105,11 @@ html,body{
         width:60%;
     }
 
-    #respuesta h1{
-        font-size: 107px;
+    h1{
+        font-size: 80px;
+    }
+    body{
+        line-height: 1;
     }
 
     #anuncioRespuesta p{
