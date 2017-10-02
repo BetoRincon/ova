@@ -1,0 +1,18 @@
+#medio{
+    height: 91%;
+}
+#content{
+    height: 100%;
+}
+#formulario{
+    position: relative;
+    width: 100%;
+    border: solid 1px greenyellow;
+    text-align: center;
+}
+#form-input{
+    position: relative;
+    /* text-align: center; */
+    left: 7%;
+
+}

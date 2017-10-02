@@ -8,6 +8,7 @@ $balin = $('#balin');
 
 
 
+
 //eventos
 
 $adelante.click(function () {
@@ -33,6 +34,9 @@ $adelante.click(function () {
         case ubicacion + "densidad3.html":
             window.location.replace(ubicacion + "densidad4.html");
             break;
+        case ubicacion + "densidad4.html":
+            window.location.replace(ubicacion + "densidad5.html");
+            break;
     }
 });
 
@@ -56,6 +60,9 @@ $atras.click(function () {
            break;
         case ubicacion + "densidad4.html":
            window.location.replace(ubicacion+"densidad3.html");
+           break;
+           case ubicacion + "densidad5.html":
+           window.location.replace(ubicacion+"densidad4.html");
            break;
            
    }
