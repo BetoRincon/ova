@@ -2,7 +2,7 @@ html,body{
     position: relative;
     height: 100%;
     width: 100%;
-    background-image:url('../img/fondo.jpg');
+    background-image:url('../img/lab.png');
     background-size:cover;
     background-repeat: no-repeat; 
     }
