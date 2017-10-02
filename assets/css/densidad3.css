@@ -116,3 +116,23 @@
     padding: 2%;
     padding-top: 4%;
 }
+#svg-balanza{
+    position: relative;
+    /* display: inline; */
+    border: solid 1px royalblue;
+    height: 70%;   
+}
+#esfera{
+    position: relative;
+    /* display: inline; */
+    border: solid 1px royalblue;
+    height: 30%;
+}
+#svg-esfera{
+    height: 100%;
+    width: 100%;
+}
+#balin{
+    height: 10%;
+    width: 10%;
+}

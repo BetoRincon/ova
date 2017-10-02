@@ -3,6 +3,7 @@ $adelante = $('#adelante');
 $atras = $('#atras');
 $refrescar = $('#refrescar');
 $cuadroVerde = $('#cuadro-verde');
+$balin = $('#balin');
 
 
 
@@ -113,4 +114,6 @@ function animacion2(a) {
         TweenMax.to($atras, 0.5, { scale: 1.0 })
     }
 }
+TweenMax.to($balin, 2, { y: 9, repeat: -1 });
+
 
