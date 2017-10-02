@@ -1,0 +1,254 @@
+.columna1, .columna2{
+   /* border: solid 1px blueviolet;*/
+    padding: 0; 
+    padding: 0;
+    top: 4%;  
+}
+.columna2{
+    width: 48%;
+}
+#densidad-texto-sup{
+    position: relative;
+    height: 14%;
+    width: 100%;
+    /*border: solid 1px deeppink;*/
+    text-align: center;
+    padding: 4%;
+}
+ #densidad-texto-inf{
+    position: relative;
+    height: 20%;
+    width: 100%;
+   /* border: solid 1px deeppink;*/
+    top:26%;
+    left: 0%;    
+}
+
+#densidad-texto-sup p{
+    position: relative;
+    font-size: 20px;
+   /* border: solid 1px red;   */ 
+}
+
+
+#densidad-formula-grande{
+    position: relative;
+    left: 28%;
+    height: 26%;
+    width: 44%;
+   /* border: solid 1px deeppink;*/
+    float: left;
+    font-size: 23px;
+}
+#D{
+    position: relative;
+    width: 25%;
+    left: 10%;
+    top: 21%;
+    font-size: 44px;
+}
+
+#D, #formula,#masa, #volumen,#linea{
+   /* border: solid 1px deeppink;    */
+}
+#formula{
+    width: 75%;
+    position: relative;
+    left: 25%;
+    top: -45%;
+    text-align: -webkit-center;
+    height: 100%;
+}
+
+#masa, #volumen{
+    position: relative;
+    width: 50%;    
+}
+#linea{
+    height: 3%;
+    background-color: black;
+    width: 67%;
+    left: 4%;
+    position: relative;
+}
+#densidad-texto-medio{
+    position: absolute;
+   /* border: solid 1px deeppink;*/
+    height: 20%;
+    width: 100%;
+    top: 33%;
+    text-align: center;
+}
+
+#densidad-texto-medio p{
+   /* border: solid 1px red;*/
+    margin-top: 4%;
+    font-size: 20px;
+}
+#densidad-formula-medio{
+    position: absolute;
+    /*border: solid 1px greenyellow;*/
+    height: 20%;
+    width: 33%;
+    top: 47%;
+    left: 35%;
+}
+#densidad-medio{
+    position: absolute;
+    font-size: 28px;
+   /* border: solid 1px green;*/
+    width: 19%;
+    top: 25%;
+    left: 25%;
+    
+}
+#svg-implica-medio{
+
+    position: absolute;
+    left: 46%;
+    top: 41%;
+}
+#masa-medio{
+    position: absolute;
+    font-size: 28px;
+    /*border: solid 1px green;*/
+    left: 58%;
+    top: 26%;
+      
+}
+
+/*-------------------------------------------------*/
+#densidad-texto-bajo{
+    position: absolute;
+   /* border: solid 1px greenyellow;*/
+    height: 20%;
+    width: 100%;
+    top: 61%;
+    text-align: center;
+}
+
+#densidad-texto-bajo p{
+  /*  border: solid 1px red;*/
+    margin-top: 4%;
+    font-size: 20px;
+}
+#densidad-formula-bajo{
+    position: absolute;
+  /*  border: solid 1px greenyellow;*/
+    height: 20%;
+    width: 33%;
+    top: 75%;
+    left: 35%;
+}
+#densidad-bajo{
+    position: absolute;
+    font-size: 28px;
+   /* border: solid 1px green;*/
+    width: 19%;
+    top: 25%;
+    left: 25%;
+    
+}
+#svg-implica-bajo{
+
+    position: absolute;
+    left: 46%;
+    top: 41%;
+}
+#masa-bajo{
+    position: absolute;
+    font-size: 28px;
+   /* border: solid 1px green;*/
+    left: 58%;
+    top: 26%;      
+}
+#inverso-volumen{
+    position: relative;
+    left: 56%;
+    height: 100%;
+    width: 44%;
+    /*border: solid 1px green;*/
+    float: left;
+    font-size: 23px;
+}
+#formula-bajo{
+    left: 12%;
+    position: absolute;
+    text-align: center;
+}
+#linea-bajo{
+    height: 3%;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+#separador{
+    position: relative;
+    float: left;
+    height: 70%;
+    width: 1%;
+    background-color: black; 
+    top: 2%;
+}
+/*-------------------------------------------------*/
+#densidad-formula-superior{
+    position: relative;
+ /*   border: solid 1px greenyellow;*/
+    height: 20%;
+    width: 33%;
+    top: 9%;
+    left: 35%;
+}
+#densidad-superior{
+    position: absolute;
+    font-size: 28px;
+  /*  border: solid 1px green;*/
+    width: 19%;
+    top: 25%;
+    left: 65%;
+    
+}
+#svg-implica-superior{
+
+    position: absolute;
+    left: 55%;
+    top: 41%;
+}
+#masa-superior{
+    position: absolute;
+    font-size: 28px;
+   /* border: solid 1px blueviolet;*/
+    left: 0%;
+    top: 26%;
+      
+}
+#svg-arriba, #svg-arriba2{
+   /* border: solid 1px green;*/
+    width: 14%;
+    height: 100%;
+    left: 35%;
+    position: absolute;
+}
+#svg-arriba2{
+    left: 80%;
+}
+#svg-abajo, #svg-abajo2{
+    transform: rotate(180deg);
+   /* border: solid 1px green;*/
+    width: 14%;
+    height: 100%;
+    left: 35%;
+    position: absolute;
+}
+#svg-abajo2{
+    left: 80%;
+}
+#volumen-superior{
+    position: absolute;
+    font-size: 28px;
+    /*border: solid 1px blueviolet;*/
+    left: -18%;
+    top: 26%;
+      
+}

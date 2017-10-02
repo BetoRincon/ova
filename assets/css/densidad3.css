@@ -1,0 +1,118 @@
+.columna1, .columna2{
+     border: solid 1px blueviolet;
+     padding: 0; 
+     padding: 0;
+     top: 5%;  
+ }
+ .columna1{
+     width: 30%;
+     height: 73%;
+ }
+ .columna2{
+     width: 69%;
+     height: 73%;
+ }
+ #separador{
+    position: relative;
+    float: left;
+    height: 84%;
+    width: 1%;
+    background-color: black; 
+    top: 2%;
+}
+#separador2{
+    position: relative;
+    border: solid 1px greenyellow;
+    background-color: black;
+    height: 4%;
+    width: 80%;
+    left: 11%;
+
+}
+
+#title-arquim
+{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 44px;
+    line-height: 96%;
+    padding: 5%;
+}
+#content{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 59%;
+    width: 100%;
+    padding: 8%;
+}
+#superior{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 9%;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+#medio{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 58%;
+    width: 100%;
+}
+#inferior{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 29%;
+    width: 100%;
+}
+#probetas{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 73%;    
+}
+#volumenes{
+    position: relative;
+    border: solid 1px deeppink;
+    height: 27%;
+    text-align: center;
+    font-size: 15px;
+    padding: 1%;
+    font-weight: 600;
+}
+#izquierdo{
+    position: relative;
+    /* display: inline; */
+    border: solid 1px deeppink;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 22px;
+    float: left;
+    padding-top: 3%;
+}
+#centro{
+    position: relative;
+    /*display: inline;*/
+    border: solid 1px deeppink;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+    float: left;  
+}
+#derecho{
+    position: relative;
+    /* display: inline; */
+    border: solid 1px deeppink;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    padding: 2%;
+    padding-top: 4%;
+}

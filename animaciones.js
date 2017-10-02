@@ -2,6 +2,10 @@
 $adelante = $('#adelante');
 $atras = $('#atras');
 $refrescar = $('#refrescar');
+$cuadroVerde = $('#cuadro-verde');
+
+
+
 
 //eventos
 
@@ -9,12 +13,22 @@ $adelante.click(function () {
      
   // alert(window.location.href);
     var ubicacion = "http://localhost/ova/";
+
+
  
     switch (window.location.href) {
+        case ubicacion:
+            window.location.replace(ubicacion + "densidad1.html");
+            break;
         case ubicacion + "index.html":
             window.location.replace(ubicacion + "densidad1.html");
+            break;
+        case ubicacion + "densidad1.html":
+            window.location.replace(ubicacion + "densidad2.html");
             break;    
-            
+        case ubicacion + "densidad2.html":
+            window.location.replace(ubicacion + "densidad3.html");
+            break;
     }
 });
 
@@ -29,7 +43,13 @@ $atras.click(function () {
            break;    
         case ubicacion + "densidad1.html":
            window.location.replace(ubicacion+"index.html");
-           break;    
+           break;
+        case ubicacion + "densidad2.html":
+           window.location.replace(ubicacion+"densidad1.html");
+           break;
+        case ubicacion + "densidad3.html":
+           window.location.replace(ubicacion+"densidad2.html");
+           break;
            
    }
 });
@@ -38,10 +58,20 @@ $refrescar.click(function () {
     reload();
     function loadPage() {
         location.reload();
+        setTimeout(loadPage(), 3000);
     }
     /* https://www.w3schools.com/js/js_timing.asp */
-    setTimeout(loadPage(), 3000);
     
+    
+});
+
+$cuadroVerde.click(function () {
+    //reload();
+    location.reload(); 
+    function loadPage() {
+        location.reload();
+        setTimeout(loadPage(), 3000);
+    }
 });
 
 $adelante.mouseenter(function () {
