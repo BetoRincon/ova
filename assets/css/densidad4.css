@@ -13,12 +13,13 @@
     height: 73%;
 }
 #separador{
-   position: relative;
-   float: left;
-   height: 84%;
-   width: 1%;
-   background-color: black; 
-   top: 2%;
+    position: relative;
+    float: left;
+    height: 84%;
+    width: 0.7%;
+    background-color: #066595;
+    border-radius: 5px;
+    top: 2%;
 }
 
 #content{
@@ -33,7 +34,7 @@
     border: solid 1px greenyellow;
     height: 100%;
     width: 70%;
-    padding: 8%;
+   /* padding: 8%;*/
     float: left;
 }
 #izquierda{
@@ -43,4 +44,40 @@
     width: 30%;
     padding: 8%;
     float: left;
+}
+#probeta{
+    position: absolute;
+    height: 84%;
+    width: 100%;
+    top: 37%;
+    left: 0%;
+}
+#tabla{
+    position: relative;
+    top: 0%;
+    border: solid 1px greenyellow;
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+#lista-fluidos{
+    position: relative;
+    top: 0%;
+    border: solid 1px greenyellow;
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+.lista{
+    position: relative;
+    border: solid 1px blueviolet;
+    height: 50%;
+    width: 100%;
+    top: 0%;
+}
+.item{
+    position: relative;
+    border: solid 1px blueviolet;
+    height: 10%;
+    background-color: bisque;
 }

@@ -7,8 +7,12 @@
 #formulario{
     position: relative;
     width: 100%;
-    border: solid 1px greenyellow;
+    border: solid 1px #066595;
     text-align: center;
+    background-color: rgba(6, 101, 149, 0.3);
+    color: #032E44;
+    font-weight: 600;
+    top: 12%;
 }
 #form-input{
     position: relative;
