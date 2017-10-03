@@ -149,6 +149,8 @@ function allowDrop(ev) {
 function drag(ev) {
     /*obtener id de elemento draggable */ 
     ev.dataTransfer.setData("text", ev.currentTarget.id);
+    ev.dataTransfer.setData("text", ev.target.id);
+   
    /* alert(ev.currentTarget.id);*/
 }
 
@@ -157,7 +159,7 @@ function drop(ev) {
    
     /*obtener id de elemnto draggable, sin esta linea no funciona el evento de drop*/
     var data = ev.dataTransfer.getData("text");
-    /*alert(data);*/
+    
      //para controlar la entrada de fluidos
     
     
@@ -203,7 +205,7 @@ function drop(ev) {
                         else {
                             if (data == "lista-Icopor" && contador==6) {
                                 $bolaIcopor.css('visibility', 'visible');        
-                                TweenMax.fromTo($bolaIcopor, 0.5, { y: -600 }, { y: 0 });
+                                TweenMax.fromTo($bolaIcopor, 0.5, { y: -300 }, { y: 0 });
                                 contador++;
                             } 
                             else {
@@ -261,7 +263,9 @@ function animacion2(a) {
 function Balanza() {    
     TweenMax.to($balin, 2, { y: 9,onStart:showSix ,onRepeat: showSix, repeat: -1 });
 
-    /* onStart solo se ejecuta una vez al inicio */
+    /* onStart solo se ejecuta una vez al inicio. Se envía la misma función al
+    inicio y al final para que el efecto arranque desde la priemrea vez, si no,
+    solo se efectúa a partir de la segunda */
     
         function showSix() {
         
