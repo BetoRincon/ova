@@ -31,10 +31,7 @@ $(document).ready(function () {
     contador = 0;
     auth = false;
 
-    if (window.location.href == "http://localhost/ova/densidad3.html") {
-       
-        Balanza();
-    }
+    
 });
 
 //eventos
@@ -260,7 +257,7 @@ function animacion2(a) {
 }
 
 
-function Balanza() {    
+   /* balanza de densida 3 */
     TweenMax.to($balin, 2, { y: 9,onStart:showSix ,onRepeat: showSix, repeat: -1 });
 
     /* onStart solo se ejecuta una vez al inicio. Se envía la misma función al
@@ -271,7 +268,7 @@ function Balanza() {
         
         TweenMax.fromTo($('#_6'),0.5, {autoAlpha:0, delay:1}, {autoAlpha:1, delay:1});TweenMax.fromTo($('#_0c'),0.5, {autoAlpha:1, delay:1}, {autoAlpha:0, delay:1});  
     } 
-}
+
 
 
 
