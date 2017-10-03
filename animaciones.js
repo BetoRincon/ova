@@ -9,23 +9,27 @@ $bolaIcopor = $('#bola-icopor');
 $glicerina = $('#glicerina');
 $alcohol = $('#alcohol');
 $agua = $('#agua');
-$aceite = $('#glicerina-2');
+$aceite = $('#aceite');
 $miel = $('#miel');
-
+var contador;
+var auth;
+$bolaIcopor.css('visibility', 'hidden');
+$balin2.css('visibility', 'hidden');
+$bolaIcopor.css('visibility', 'hidden');
+$glicerina.css('visibility', 'hidden');
+$alcohol.css('visibility', 'hidden');
+$agua.css('visibility', 'hidden');
+$aceite.css('visibility', 'hidden');
+$miel.css('visibility', 'hidden');
 
 
 
 
 //carga de pag
 $(document).ready(function () {
-    $bolaIcopor.css('visibility', 'hidden');
-    $balin2.css('visibility', 'hidden');
-    $bolaIcopor.css('visibility', 'hidden');
-    $glicerina.css('visibility', 'hidden');
-    $alcohol.css('visibility', 'hidden');
-    $agua.css('visibility', 'hidden');
-    $aceite.css('visibility', 'hidden');
-    $miel.css('visibility', 'hidden');
+    $('#svg-fluidos').css('display', 'block');
+    contador = 0;
+    auth = false;
 });
 
 //eventos
@@ -145,41 +149,74 @@ function drag(ev) {
 
 function drop(ev) {
     ev.preventDefault();
-    /*obtener id de elemnto draggable*/
+   
+    /*obtener id de elemnto draggable, sin esta linea no funciona el evento de drop*/
     var data = ev.dataTransfer.getData("text");
     /*alert(data);*/
-    if (data == "lista-Icopor") {
-        $bolaIcopor.css('visibility', 'visible');        
-        TweenMax.fromTo($bolaIcopor, 0.5, {  y: -600 }, {  y: 0 });
+     //para controlar la entrada de fluidos
+    
+    
+    if (data == "lista-Balin" && contador==0) {
+        $balin2.css('visibility', 'visible');        
+        TweenMax.fromTo($balin2, 1, { y: -500 }, { y: 0 });
+        contador++;
+        
     }
-    if (data == "lista-Aceite") {
-        $aceite.css('visibility', 'visible');        
-        TweenMax.fromTo($aceite, 1, { alpha: 0, y: -500 }, { alpha: 1, y: 0 });
+    else
+    {
+        if (data == "lista-Miel" && contador==1) {
+            $miel.css('visibility', 'visible');        
+            TweenMax.fromTo($miel, 1, { autoAlpha: 0, y: -500 }, { autoAlpha: 1, y: 0 });
+            contador++;
+            
+        }
+        else {
+            if (data == "lista-Glicerina" && contador==2) {
+                $glicerina.css('visibility', 'visible');        
+                TweenMax.fromTo($glicerina, 1, { autoAlpha: 0, y: -500 }, { autoAlpha: 1, y: 0 });
+                contador++;
+            }
+            else
+            {
+                if (data == "lista-Agua" && contador==3) {
+                    $agua.css('visibility', 'visible');        
+                    TweenMax.fromTo($agua, 1, { autoAlpha: 0, y: -500 }, { autoAlpha: 1, y: 0 });
+                    contador++;
+                }
+                else {
+                    if (data == "lista-Alcohol" && contador==4) {
+                        $alcohol.css('visibility', 'visible');        
+                        TweenMax.fromTo($alcohol, 1, { autoAlpha: 0, y: -500 }, { autoAlpha: 1, y: 0 });
+                        contador++;
+                    }
+                    else {
+                        if (data == "lista-Aceite" && contador==5) {
+                            $aceite.css('visibility', 'visible');        
+                            TweenMax.fromTo($aceite, 1, {y: -500 }, { y: 0 });
+                            contador++;
+                        }
+                        else {
+                            if (data == "lista-Icopor" && contador==6) {
+                                $bolaIcopor.css('visibility', 'visible');        
+                                TweenMax.fromTo($bolaIcopor, 0.5, { y: -600 }, { y: 0 });
+                                contador++;
+                            } 
+                            else {
+                                 $('#alert').css('visibility', 'visible');
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+       
     }
 
-    if (data == "lista-Alcohol") {
-        $alcohol.css('visibility', 'visible');        
-        TweenMax.fromTo($alcohol, 1, { alpha: 0, y: -500 }, { alpha: 1, y: 0 });
-    }
-    if (data == "lista-Agua") {
-        $agua.css('visibility', 'visible');        
-        TweenMax.fromTo($agua, 1, { alpha: 0, y: -500 }, { alpha: 1, y: 0 });
-    }
-    
-    if (data == "lista-Glicerina") {
-        $('#glicerina').css('visibility', 'visible');        
-        TweenMax.fromTo($glicerina, 1, { alpha: 0, y: -500 }, { alpha: 1, y: 0 });
-    }
-    if (data == "lista-Miel") {
-        $miel.css('visibility', 'visible');        
-        TweenMax.fromTo($miel, 1, { alpha: 0, y: -500 }, { alpha: 1, y: 0 });
-    }
-    if (data == "lista-Balin") {
-        $balin2.css('visibility', 'visible');        
-        TweenMax.fromTo($balin2, 1, {  y: -500 }, { y: 0 });
-    }
+   /*ev.target.appendChild(document.getElementById(data));*/ 
     document.getElementById(data).style.visibility = "hidden";
-   ev.target.appendChild(document.getElementById(data));
+   
     
 }
 
