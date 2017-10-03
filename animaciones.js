@@ -30,6 +30,11 @@ $(document).ready(function () {
     $('#svg-fluidos').css('display', 'block');
     contador = 0;
     auth = false;
+
+    if (window.location.href == "http://localhost/ova/densidad3.html") {
+       
+        Balanza();
+    }
 });
 
 //eventos
@@ -252,7 +257,28 @@ function animacion2(a) {
     }
 }
 
-TweenMax.to($balin, 2, { y: 9, repeat: -1 });
+
+function Balanza() {    
+    TweenMax.to($balin, 2, { y: 9,onStart:showSix ,onRepeat: showSix, repeat: -1 });
+
+    /* onStart solo se ejecuta una vez al inicio */
+    
+        function showSix() {
+        
+        TweenMax.fromTo($('#_6'),0.5, {autoAlpha:0, delay:1}, {autoAlpha:1, delay:1});TweenMax.fromTo($('#_0c'),0.5, {autoAlpha:1, delay:1}, {autoAlpha:0, delay:1});  
+    } 
+}
+
+
+
+/*TweenMax.to($balin, 2, { y: 9, repeat: -1 });*/
+/*TweenMax.to($balin, 2, {
+    cycle: {
+        y: 9
+    }
+});*/
+/*TweenMax.fromTo($('#_6'),0.1, {autoAlpha:0, repeat: -1, delay:2 }, {autoAlpha:1, repeat:-1, delay:2});*/
+
 
 /*TweenMax.fromTo($bolaIcopor, 1, { alpha: 0, y:-5,delay: 3.5}, { alpha: 1, y: 9, delay:3.5});
 TweenMax.fromTo($glicerina, 1, { alpha: 0, delay:3, y:-500 }, { alpha: 1, delay:3, y:0});

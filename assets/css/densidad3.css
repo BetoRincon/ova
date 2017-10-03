@@ -29,7 +29,6 @@
     height: 3%;
     width: 80%;
     left: 11%;
-
 }
 
 #title-arquim
@@ -137,4 +136,7 @@
 #balin{
     height: 10%;
     width: 10%;
+}
+#_6{
+  visibility: hidden;
 }
