@@ -203,6 +203,7 @@ function drop(ev) {
                             } 
                             else {
                                  $('#alert').css('visibility', 'visible');
+                                 contador = null;
                             }
                         }
                     }
