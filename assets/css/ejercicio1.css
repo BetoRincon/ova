@@ -77,9 +77,8 @@
 }
 .item{
     position: relative;
-    border: solid 1px blueviolet;
     height: 10%;
-    background-color: bisque;
+    text-align: center;
 }
 #alert{
     position: absolute;
