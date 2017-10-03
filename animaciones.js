@@ -202,7 +202,9 @@ function drop(ev) {
                                 contador++;
                             } 
                             else {
-                                 $('#alert').css('visibility', 'visible');
+                                $('#alert').css('visibility', 'visible');
+                                $('#wrong').css('visibility', 'visible');
+                                $('#right').css('visibility', 'hidden');
                                  contador = null;
                             }
                         }
@@ -213,6 +215,12 @@ function drop(ev) {
             
         }
        
+    }
+
+    if (contador == 7) {
+        $('#alert').css('visibility', 'visible');
+        $('#right').css('visibility', 'visible');
+        $('#wrong').css('visibility', 'hidden');
     }
 
    /*ev.target.appendChild(document.getElementById(data));*/ 

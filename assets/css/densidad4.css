@@ -93,3 +93,6 @@
 #svg-fluidos{
     display:none;
 }
+#wrong, #right{
+    visibility:hidden;
+}
