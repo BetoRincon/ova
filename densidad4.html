@@ -51,7 +51,7 @@
                     Icopor
                 </div>
                 <div class="item" id="lista-Aceite" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                    Glicerina
+                    Aceite
                 </div>
                 <div class="item" id="lista-Alcohol" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
                     Alcohol
@@ -60,7 +60,7 @@
                     Agua
                 </div>
                 <div class="item" id="lista-Glicerina" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                    Aceite
+                    Glicerina
                 </div>
                 <div class="item" id="lista-Miel" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
                     Miel
@@ -73,9 +73,15 @@
             </div>
 
             <div id="izquierda" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+              <div id="alert">
+                  <div class="alert alert-danger" role="alert">
+                      <strong>Incorrecto!</strong> Recuerde que los fluidos se ordenan de acuerdo a su densidad.
+                    </div>
+              </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.38 632"  id="probeta">
                   
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 79.66 555.41" >
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 79.66 555.41" id="svg-fluidos">
                   <defs>
                     <style>
                       .clss-1{fill:none;}.clss-2{fill:#231f20;}.clss-3{isolation:isolate;}.clss-4{fill:#d6c85f;}.clss-5{fill:url(#Degradado_sin_nombre_47);}.clss-6{opacity:0.05;}.clss-7{stroke:#999;stroke-miterlimit:10;fill:url(#_10_ppp_10_);}.clss-8{fill:#82a8f4;}.clss-9{fill:#fcbef8;}.clss-10{fill:#aee2f4;opacity:0.8;}.clss-11{fill:#efa759;}.clss-12{fill:url(#Degradado_sin_nombre_14);}.clss-13,.clss-14,.clss-15{mix-blend-mode:screen;}.clss-13{fill:url(#radial-gradient);}.clss-14{fill:url(#radial-gradient-2);}.clss-15{fill:url(#radial-gradient-3);}
@@ -125,7 +131,7 @@
                     <g id="Capa_2" data-name="Capa 2">
                       <g id="Capa_1-2" data-name="Capa 1">
                         <g id="probeta">
-                          <path id="glicerina" class="clss-4" d="M1.44 65.5V224c.79 2.15 3.38 5.46 11.87 6H66s11.49-.51 13.67-5.82V65.5s-20.3 4.17-37.8 4.56c-20.56.47-40.43-4.56-40.43-4.56z"/>
+                          <path id="aceite" class="clss-4" d="M1.44 65.5V224c.79 2.15 3.38 5.46 11.87 6H66s11.49-.51 13.67-5.82V65.5s-20.3 4.17-37.8 4.56c-20.56.47-40.43-4.56-40.43-4.56z"/>
                           <g id="bola-icopor">
                             <circle id="textura" class="clss-5" cx="38.45" cy="38.45" r="37.95"/>
                             <g id="textura-2" data-name="textura" class="cls-6">
@@ -133,7 +139,7 @@
                             </g>
                           </g>
                           <path id="alcohol" class="clss-8" d="M1.44 224.5v55.32c.79.77 3.38 2 11.87 2.15H66s11.49-.18 13.67-2.09V224.5z"/>
-                          <path id="glicerina-2" data-name="glicerina" class="clss-9" d="M1.44 377.5V483c.79 1.41 3.38 3.57 11.87 3.93H66s11.49-.34 13.67-3.8V377.5s-20.3 4.68-37.8 4.94c-20.56.31-40.43-4.94-40.43-4.94z"/>
+                          <path id="glicerina" data-name="glicerina" class="clss-9" d="M1.44 377.5V483c.79 1.41 3.38 3.57 11.87 3.93H66s11.49-.34 13.67-3.8V377.5s-20.3 4.68-37.8 4.94c-20.56.31-40.43-4.94-40.43-4.94z"/>
                           <path id="agua" class="clss-10" d="M1.44 271.5V377c.79 1.41 3.38 3.57 11.87 3.93H66s11.49-.34 13.67-3.8V271.5s-20.3 4.68-37.8 4.94c-20.56.31-40.43-4.94-40.43-4.94z"/>
                           <path id="miel" class="clss-11" d="M1.44 480.5v70.9c.79.92 3.38 2.33 11.87 2.57H66s11.49-.22 13.67-2.48v-71s-20.3 5-37.8 5.19c-20.56.21-40.43-5.18-40.43-5.18z"/>
                           <g id="balin2">
