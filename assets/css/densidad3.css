@@ -151,7 +151,7 @@
     height: 10%;
     width: 10%;
 }
-#_6{
+#_6, #ej2_6{
   visibility: hidden;
 }
 #escritorio{
@@ -211,4 +211,7 @@
     position: relative;
     top: 26%;
     left: 14%;
+}
+#balin4, #balin5{
+    visibility: hidden;
 }

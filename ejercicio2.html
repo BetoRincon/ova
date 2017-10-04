@@ -87,8 +87,8 @@
                   
               <div id="instrumentos">
 
-                <div id="instrumento-balin" >
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"  id="svg-esfera2">
+                <div id="instrumento-balin" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" >
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"  id="svg-esfera2" >
                       <defs>
                         <style>
                           .clsss-1{isolation:isolate;}.clsss-2{fill:url(#Degradado_sin_nombre_9);}.clsss-3{fill:url(#Degradado_sin_nombre_11);}.clsss-4,.clsss-5,.clsss-6{mix-blend-mode:screen;}.clsss-4{fill:url(#radial-gradient);}.clsss-5{fill:url(#radial-gradient-2);}.clsss-6{fill:url(#radial-gradient-3);}
@@ -136,9 +136,9 @@
 
                 <div id="instrumento-balanza-balin">
 
-                  <div id="svg-balin-balanza">
-                      <div id="esfera2">
-                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"  id="svg-esfera2" height="100%" width="100%">
+                  <div id="svg-balin-balanza" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" >
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"   height="100%" width="100%" id="svgbalin4" >
                             <defs>
                               <style>
                                 .clsss-1{isolation:isolate;}.clsss-2{fill:url(#Degradado_sin_nombre_9);}.clsss-3{fill:url(#Degradado_sin_nombre_11);}.clsss-4,.clsss-5,.clsss-6{mix-blend-mode:screen;}.clsss-4{fill:url(#radial-gradient);}.clsss-5{fill:url(#radial-gradient-2);}.clsss-6{fill:url(#radial-gradient-3);}
@@ -182,7 +182,7 @@
                               </g>
                             </g>
                           </svg>
-                  </div>
+                  
                   </div>
                   <div id="svgbalanza">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 372.26 149.62" height="100%" width="100%">
@@ -193,8 +193,8 @@
                                 <path id="gramo" d="M316.31,104.77v5.08L314.49,108v-2.8l1.14-1.14Zm-1.82-2.5V97.42l1.82-1.82v7.11l-.68.7Zm-8,7.9,1.8-1.82h5.9l1.8,1.82Zm0-14.9H316l-1.8,1.82h-5.9Zm1.58,9.38-.92-.91.92-.91h6.33l.9.91-.9.91Zm-1.92-1.94V95.6L308,97.42v4.85l-1.15,1.14Z"/>
                                 <g class="_8para6">
 
-                                    <path id="_0c" data-name="0c" d="M247 89.53L244.52 92l-1.46-1.46V75.19L247 79.1zm0 16.8l-3.91 3.92V95l1.46-1.52L247 95.9zm17.21-31.83l-3.86 3.91h-12.7l-3.86-3.91zm0 36.47h-20.4l3.86-3.91h12.68zm.73-20.46L263.49 92 261 89.53V79.1l3.91-3.91zm0 19.73l-3.94-3.91V95.9l2.48-2.45 1.44 1.55z"/>
-                                    <path id="_6" data-name="6" d="M247 89.53L244.52 92l-1.46-1.46V75.19L247 79.1zm0 16.8l-3.91 3.92V95l1.46-1.52L247 95.9zm17.21-31.83l-3.86 3.91h-12.7l-3.86-3.91zm-2.21 18l-3 3.09h-10l-3-3.09 3.17-1.88h9.81zm2.18 18.5h-20.4l3.86-3.91h12.68zm.73-.73l-3.91-3.94V95.9l2.48-2.45 1.44 1.55z"/>
+                                    <path id="ej2_0c" data-name="0c" d="M247 89.53L244.52 92l-1.46-1.46V75.19L247 79.1zm0 16.8l-3.91 3.92V95l1.46-1.52L247 95.9zm17.21-31.83l-3.86 3.91h-12.7l-3.86-3.91zm0 36.47h-20.4l3.86-3.91h12.68zm.73-20.46L263.49 92 261 89.53V79.1l3.91-3.91zm0 19.73l-3.94-3.91V95.9l2.48-2.45 1.44 1.55z"/>
+                                    <path id="ej2_6" data-name="6" d="M247 89.53L244.52 92l-1.46-1.46V75.19L247 79.1zm0 16.8l-3.91 3.92V95l1.46-1.52L247 95.9zm17.21-31.83l-3.86 3.91h-12.7l-3.86-3.91zm-2.21 18l-3 3.09h-10l-3-3.09 3.17-1.88h9.81zm2.18 18.5h-20.4l3.86-3.91h12.68zm.73-.73l-3.91-3.94V95.9l2.48-2.45 1.44 1.55z"/>
                                     
 
                                 </g>
@@ -203,7 +203,7 @@
                                 <path id="_0a" data-name="0a" d="M197.12,89.53,194.67,92l-1.46-1.46V75.19l3.91,3.91Zm0,16.8-3.91,3.92V95l1.46-1.52,2.45,2.45Zm17.22-31.83-3.86,3.91H197.8l-3.86-3.91Zm0,36.47h-20.4l3.86-3.91h12.68Zm.73-20.46L213.64,92l-2.49-2.45V79.1l3.91-3.91Zm0,19.73-3.91-3.92V95.9l2.49-2.45L215.07,95Z"/></g></g></g></g></svg>
                    </div> 
                 </div>
-                <div id="instrumento-probeta">
+                <div id="instrumento-probeta" ondrop="drop(event)" ondragover="allowDrop(event)">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.38 632"  id="probeta" height="70%" width="70%">
                       
@@ -258,8 +258,9 @@
                           <g id="Capa_1-2" data-name="Capa 1">
                             <g id="probeta">
                               
-                              
-                              <path id="agua2" transform="translate(0,-20)" class="clss-10" d="M1.44 480.5v70.9c.79.92 3.38 2.33 11.87 2.57H66s11.49-.22 13.67-2.48v-71s-20.3 5-37.8 5.19c-20.56.21-40.43-5.18-40.43-5.18z"/>
+                                <path id="glicerina2" data-name="glicerina" class="clss-9" d="M1.44 377.5V483c.79 1.41 3.38 3.57 11.87 3.93H66s11.49-.34 13.67-3.8V377.5s-20.3 4.68-37.8 4.94c-20.56.31-40.43-4.94-40.43-4.94z"/>
+                                <path id="agua2" class="clss-10" d="M1.44 271.5V377c.79 1.41 3.38 3.57 11.87 3.93H66s11.49-.34 13.67-3.8V271.5s-20.3 4.68-37.8 4.94c-20.56.31-40.43-4.94-40.43-4.94z"/>
+                              <path id="miel2"  class="clss-11" d="M1.44 480.5v70.9c.79.92 3.38 2.33 11.87 2.57H66s11.49-.22 13.67-2.48v-71s-20.3 5-37.8 5.19c-20.56.21-40.43-5.18-40.43-5.18z"/>
 
                               <g id="balin5" transform="translate(0, -25)">
                                   <circle class="clss-12" cx="41.45" cy="529.89" r="25.51"/>
