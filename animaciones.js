@@ -290,13 +290,13 @@ function animacion2(a) {
     /*Para el ejercicio2 */
     function showSixej2() {
         
-        TweenMax.fromTo($('#ej2_6'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, delay: 0.4 });
-        TweenMax.fromTo($('#ej2_0c'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, delay: 0.4 });
+        TweenMax.fromTo($('#_x35_'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, delay: 0.4 });
+        TweenMax.fromTo($('#_0b'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, delay: 0.4 });
         }  
         function hideSixej2() {
             
-            TweenMax.fromTo($('#ej2_0c'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, });
-            TweenMax.fromTo($('#ej2_6'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, });
+            TweenMax.fromTo($('#_0b'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, });
+            TweenMax.fromTo($('#_x35_'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, });
         }  
 
 
