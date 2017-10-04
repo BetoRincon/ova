@@ -114,4 +114,6 @@ html,body{
     #anuncioRespuesta p{
         font-size: 53px;
     }
-   
+   audio{
+    width: 100px;
+   }
