@@ -129,9 +129,23 @@
     border: solid 1px royalblue;
     height: 30%;
 }
+#esfera2{
+    position: relative;
+    display: block;
+    margin: auto;
+    /* display: inline; */
+    border: solid 1px royalblue;
+    height: 100%;
+}
 #svg-esfera{
     height: 100%;
     width: 100%;
+}
+#svg-esfera2{
+    display: block; 
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 #balin{
     height: 10%;
@@ -143,12 +157,58 @@
 #escritorio{
     position: relative;
     width: 100%;
-    height: 30%;
+    height:50%;
     border: solid 1px deeppink;
 }
 #instrumentos{
     position: relative;
-    width: 100%;
-    height: 70%;
+    width: 70%;
+    height: 51%;
+    left: 15%;
     border: solid 1px deeppink;
+    top: 15%;
+    z-index: 1;
+}
+#svg-escritorio{
+    padding: 0;
+}
+#instrumento-balin{
+    position: relative;
+    height: 100%;
+    width: 33.3%;
+    border: solid 1px royalblue;
+    float: left ;
+}
+#instrumento-balanza-balin{
+    position: relative;
+    height: 100%;
+    width: 33.3%;
+    border: solid 1px royalblue;
+    float: left ;
+}
+#instrumento-probeta{
+    position: absolute;
+    height: 132%;
+    width: 33.3%;
+    border: solid 1px royalblue;
+    float: left;
+    left: 67%;
+    top: -33%;
+}
+#svg-balin-balanza{
+    position: relative;
+    height: 60%;
+    border: solid 1px royalblue;
+    
+    
+}
+#svgbalanza{
+    position: relative;
+    height: 40%;
+    border: solid 1px royalblue;    
+}
+#probeta{
+    position: relative;
+    top: 26%;
+    left: 14%;
 }
