@@ -121,4 +121,18 @@
  form, col-10{
      height: 100%;
  }
- 
+ .columna-cuartos{
+     position: relative;
+     float: left;
+     /*background-color: red;*/
+     /*border: 1px solid black;*/
+     height: 10%;
+     width: 25%;
+     padding: 0;
+     padding: 0;
+     text-align: center;
+ }
+ img{
+    max-height: 25px;
+    max-width: 25px;
+ }
