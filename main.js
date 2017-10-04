@@ -116,108 +116,108 @@ $('#cuestionario1').on('click', function () {
         if (rta == "densidad1" || rta == "volumen1") {
             $('#check2').css('visibility', 'visible');
             $('#check1').css('visibility', 'hidden');
-            $('input[id=cuestionario1]').prop('disabled', true);
+           
         }
         else if (rta == "masa1") {
             $('#check1').css('visibility', 'visible');
             $('#check2').css('visibility', 'hidden');
-            $('input[id=cuestionario1]').prop('disabled', true);
+           
         }
     }  
     else if (rta == "densidad2" || rta == "volumen2" || rta == "masa2") {
         if ( rta == "densidad2" || rta == "masa2") {
             $('#check4').css('visibility', 'visible');
             $('#check3').css('visibility', 'hidden');
-            $('input[id=cuestionario2]').prop('disabled', true);
+            
         }
         else if (rta == "volumen2") {
             $('#check3').css('visibility', 'visible');
             $('#check4').css('visibility', 'hidden');
-            $('input[id=cuestionario2]').prop('disabled', true);
+            
         }
     }
     else if (rta == "densidad3" || rta == "volumen3" || rta == "masa3") {
         if ( rta == "volumen3" || rta == "masa3") {
             $('#check6').css('visibility', 'visible');
             $('#check5').css('visibility', 'hidden');
-            $('input[id=cuestionario3]').prop('disabled', true);
+            
         }
         else if (rta == "densidad3") {
             $('#check5').css('visibility', 'visible');
             $('#check6').css('visibility', 'hidden');
-            $('input[id=cuestionario3]').prop('disabled', true);
+            
         }
     }
     else if (rta == "densidad4" || rta == "volumen4" || rta == "masa4") {
         if ( rta == "volumen4" || rta == "masa4") {
             $('#check8').css('visibility', 'visible');
             $('#check7').css('visibility', 'hidden');
-            $('input[id=cuestionario4]').prop('disabled', true);
+           
         }
         else if (rta == "densidad4") {
             $('#check7').css('visibility', 'visible');
             $('#check8').css('visibility', 'hidden');
-            $('input[id=cuestionario4]').prop('disabled', true);
+            
         }
     }
     else if (rta == "densidad5" || rta == "volumen5" || rta == "masa5") {
         if ( rta == "densidad5" || rta == "masa5") {
             $('#check10').css('visibility', 'visible');
             $('#check9').css('visibility', 'hidden');
-            $('input[id=cuestionario5]').prop('disabled', true);
+           
         }
         else if (rta == "volumen5") {
             $('#check9').css('visibility', 'visible');
             $('#check10').css('visibility', 'hidden');
-            $('input[id=cuestionario5]').prop('disabled', true);
+            
         }
     }
     else if (rta == "densidad6" || rta == "volumen6" || rta == "masa6") {
         if ( rta == "densidad6" || rta == "volumen6") {
             $('#check12').css('visibility', 'visible');
             $('#check11').css('visibility', 'hidden');
-            $('input[id=cuestionario6]').prop('disabled', true);
+           
         }
         else if (rta == "masa6") {
             $('#check11').css('visibility', 'visible');
             $('#check12').css('visibility', 'hidden');
-            $('input[id=cuestionario6]').prop('disabled', true);
+            
         }
     }
     else if (rta == "densidad7" || rta == "volumen7" || rta == "masa7") {
         if ( rta == "masa7" || rta == "volumen7") {
             $('#check14').css('visibility', 'visible');
             $('#check13').css('visibility', 'hidden');
-            $('input[id=cuestionario7]').prop('disabled', true);
+            
         }
         else if (rta == "densidad7") {
             $('#check13').css('visibility', 'visible');
             $('#check14').css('visibility', 'hidden');
-            $('input[id=cuestionario7]').prop('disabled', true);
+           
         }
     }
     else if (rta == "densidad8" || rta == "volumen8" || rta == "masa8") {
         if ( rta == "masa8" || rta == "volumen8") {
             $('#check16').css('visibility', 'visible');
             $('#check15').css('visibility', 'hidden');
-            $('input[id=cuestionario8]').prop('disabled', true);
+            
         }
         else if (rta == "densidad8") {
             $('#check15').css('visibility', 'visible');
             $('#check16').css('visibility', 'hidden');
-            $('input[id=cuestionario8]').prop('disabled', true);
+            
         }
     }
     else if (rta == "densidad9" || rta == "volumen9" || rta == "masa9") {
         if ( rta == "masa9" || rta == "densidad9") {
             $('#check18').css('visibility', 'visible');
             $('#check17').css('visibility', 'hidden');
-            $('input[id=cuestionario9]').prop('disabled', true);
+            
         }
         else if (rta == "volumen9") {
             $('#check17').css('visibility', 'visible');
             $('#check18').css('visibility', 'hidden');
-            $('input[id=cuestionario9]').prop('disabled', true);
+           
         }
     }
 });
