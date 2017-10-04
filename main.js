@@ -18,16 +18,32 @@ $('#btn').click(function () {
 function calcularDensidad() {
     var masa = $('#formulario-masa').val();
     var volumen =$('#formulario-volumen').val();
-    var densidad = masa / volumen;
-    if (densidad == $('#formulario-densidad').val()) {
-        $('#correcto').css('display', 'inline-block');
-        $('#incorrecto').css('display', 'none');
-        $('#validacion').css('display', 'none');
-        /*https://stackoverflow.com/questions/1414365/disable-enable-an-input-with-jquery*/ 
-        $('#formulario-masa').prop('disabled', true);
-        $('#formulario-volumen').prop('disabled', true);
-        $('#formulario-densidad').prop('disabled', true);
+    var densidad = $('#formulario-densidad').val();
+    var masaOk = false;
+    var volumenOk = false;
+    var densidadOk = false;
+
+   
+
+    /*pasar a minúsculas */
+    masa = masa.toLowerCase();
+    volumen = volumen.toLowerCase();
+    densidad = densidad.toLowerCase();
+
+    /* verificación strings */
+    if (masa.includes('50g') || masa.includes('50 g') || masa.includes('50 gramos') || masa.includes('50gramos') || masa.includes('50[gramos]') || masa.includes('50 [gramos]') || masa.includes('50[g]') || masa.includes('50 [g]')) {
+        masaOk = true;
+        /*alert(masaOk);*/
     }
+    if (volumen.includes('10ml') || volumen.includes('10 ml') || volumen.includes('10 mililitros ') || volumen.includes('10mililitros ') || volumen.includes('10[mililitros]') || volumen.includes('10 [mililitros]') || volumen.includes('10[ml]') || volumen.includes('10 [ml]')) {
+        volumenOk = true;
+       /* alert(volumenOk);*/
+    }
+    if (densidad.includes('5g/ml') || densidad.includes('5 g/ml') || densidad.includes('5 [g/ml]')|| densidad.includes('5[g/ml]')) {
+        densidadOk = true;
+        /*alert(densidadOk);*/
+    }
+    
     if (densidad != $('#formulario-densidad').val())
     {
         $('#incorrecto').css('display', 'inline-block');
@@ -37,8 +53,22 @@ function calcularDensidad() {
     if (masa==""||volumen==""||densidad=="") {
         $('#validacion').css('display', 'inline-block');
         $('#incorrecto').css('display', 'none');
+        $('#correcto').css('display', 'none');        
+    }
+
+    if (densidadOk == true && volumenOk == true && masaOk == true) {
+        /*alert("entró if");*/
+        $('#correcto').css('display', 'inline-block');
+        $('#incorrecto').css('display', 'none');
+        $('#validacion').css('display', 'none');
+        /*https://stackoverflow.com/questions/1414365/disable-enable-an-input-with-jquery*/ 
+        $('#formulario-masa').prop('disabled', true);
+        $('#formulario-volumen').prop('disabled', true);
+        $('#formulario-densidad').prop('disabled', true);
+    } else {
+        $('#incorrecto').css('display', 'inline-block');
         $('#correcto').css('display', 'none');
-        
+        $('#validacion').css('display', 'none');
     }
    
 }

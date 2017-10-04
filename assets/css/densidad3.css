@@ -215,3 +215,11 @@
 #balin4, #balin5{
     visibility: hidden;
 }
+ #_x34_0ml, #_x33_5ml{
+    visibility: hidden;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #03935c;
+    border-color: #03935c;
+}

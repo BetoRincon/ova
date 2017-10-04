@@ -159,7 +159,7 @@ function drop(ev) {
     
     /*obtener id de elemnto draggable, sin esta linea no funciona el evento de drop*/
     var data = ev.dataTransfer.getData("text");
-    alert(data);
+    /*alert(data);*/
      //para controlar la entrada de fluidos en ejercicio1 y las animaciones de ejercicio2
     
     if (data == "instrumento-balin") {
@@ -173,7 +173,8 @@ function drop(ev) {
         var masterTl = new TimelineMax();
         masterTl
             .fromTo($balin5, 0.5, { y: -550 }, { y: -20 })
-            
+            .to($('#_x34_0ml'), 0.3, { css: { visibility: 'visible' } }, '-=0.2')
+            .to($('#_x33_0ml'), 0.3, { css: { visibility: 'visible' } });            
 
     }
     
