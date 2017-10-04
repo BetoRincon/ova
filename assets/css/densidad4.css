@@ -64,3 +64,18 @@
     max-height: 200px;
     max-width: 500px;
  }
+ .superior{
+    position: relative;
+    width: 80%;
+    height: 2%;
+    border: 1px solid blueviolet;
+    padding: 2%;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: #066595;
+    border-radius: 10px;
+}
+.texto-superior{
+    color: #ffffff;
+}
