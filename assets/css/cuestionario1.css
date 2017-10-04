@@ -1,0 +1,90 @@
+.columna1, .columna2{
+    border: solid 1px blueviolet;
+    padding: 0; 
+    padding: 0;
+    top: 5%;  
+}
+.columna1{
+    width: 30%;
+    height: 73%;
+}
+.columna2{
+    width: 69%;
+    height: 73%;
+    
+}
+#separador{
+    position: relative;
+    float: left;
+    height: 84%;
+    width: 0.7%;
+    background-color: #066595;
+    border-radius: 5px;
+    top: 2%;
+}
+#content{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 100%;
+    width: 100%;
+    padding: 8%;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+ }
+ #superior{
+     position: relative;
+     border: solid 1px greenyellow;
+     height: 25%;
+     width: 100%;
+ }
+ #inferior{
+    position: relative;
+    border: solid 1px greenyellow;
+    height: 75%;
+    width: 100%;
+    font-size: 15px;
+ }
+ #checkbox{
+    position: relative;
+    transform: scale(2);
+    left: 10%;
+ }
+ #derecha{
+    position: absolute;
+    border: solid 1px greenyellow;
+    float: left;
+    height: 123%;
+    width: 90%;
+    top: -21%;
+ }
+ #izquierda{
+    position: absolute;
+    border: solid 1px greenyellow;
+    float: left;
+    height: 100%;
+    width: 10%;
+    top: -10%;
+    left: 73%;
+ }
+ #answer{
+     position: relative;
+     border: solid 1px blueviolet;
+     height: 11.11%;
+ }
+ /* https://www.w3schools.com/css/css_attribute_selectors.asp*/
+ [id^='check']{
+     position: absolute;
+     visibility: hidden;
+ }
+ td,th{
+     text-align: center;
+ }
+ input[type="radio"]{
+    transform: scale(1.5);
+ }
+ table{
+     height: 80%;
+ }
+ 
+ 
