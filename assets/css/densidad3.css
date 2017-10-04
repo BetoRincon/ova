@@ -140,3 +140,15 @@
 #_6{
   visibility: hidden;
 }
+#escritorio{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    border: solid 1px deeppink;
+}
+#instrumentos{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    border: solid 1px deeppink;
+}
