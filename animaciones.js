@@ -5,6 +5,9 @@ $refrescar = $('#refrescar');
 $cuadroVerde = $('#cuadro-verde');
 $balin = $('#balin');
 $balin2 = $('#balin2');
+$balin3 = $('#balin3');
+$balin4 = $('#balin4');
+$balin5 = $('#balin5');
 $bolaIcopor = $('#bola-icopor');
 $glicerina = $('#glicerina');
 $alcohol = $('#alcohol');
@@ -153,11 +156,26 @@ function drag(ev) {
 
 function drop(ev) {
     ev.preventDefault();
-   
+    
     /*obtener id de elemnto draggable, sin esta linea no funciona el evento de drop*/
     var data = ev.dataTransfer.getData("text");
+    alert(data);
+     //para controlar la entrada de fluidos en ejercicio1 y las animaciones de ejercicio2
     
-     //para controlar la entrada de fluidos
+    if (data == "instrumento-balin") {
+        $balin4.css('visibility', 'visible');
+        TweenMax.fromTo($balin4, 0.5, { y: -50, onComplte: showSixej2() }, { y: 0, onComplte: showSixej2() });
+    }
+    if (data == "svg-balin-balanza") {
+        $('#svgbalin4').css('display', 'none');
+        $('#balin5').css('visibility', 'visible');
+        hideSixej2();
+        var masterTl = new TimelineMax();
+        masterTl
+            .fromTo($balin5, 0.5, { y: -550 }, { y: -20 })
+            
+
+    }
     
     
     if (data == "lista-Balin" && contador==0) {
@@ -268,6 +286,17 @@ function animacion2(a) {
         
         TweenMax.fromTo($('#_6'),0.5, {autoAlpha:0, delay:1}, {autoAlpha:1, delay:1});TweenMax.fromTo($('#_0c'),0.5, {autoAlpha:1, delay:1}, {autoAlpha:0, delay:1});  
     } 
+    /*Para el ejercicio2 */
+    function showSixej2() {
+        
+        TweenMax.fromTo($('#ej2_6'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, delay: 0.4 });
+        TweenMax.fromTo($('#ej2_0c'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, delay: 0.4 });
+        }  
+        function hideSixej2() {
+            
+            TweenMax.fromTo($('#ej2_0c'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, });
+            TweenMax.fromTo($('#ej2_6'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, });
+        }  
 
 
 
