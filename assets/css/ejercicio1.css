@@ -59,6 +59,7 @@
     height: 100%;
     width: 70%;
     float: left;
+    padding: 20px;
 }
 #lista-fluidos{
     position: relative;
@@ -112,4 +113,10 @@ img {
 }
 #lista-fluidos{
     margin-top: 9%;
+}
+.flecha-arriba{
+    padding: 20px
+}
+.flecha-abajo{
+    padding: 20px
 }
