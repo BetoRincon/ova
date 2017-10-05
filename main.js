@@ -9,6 +9,7 @@
 });
 */
 
+
 $('#btn').click(function () {
     
     calcularDensidad();  
@@ -138,23 +139,36 @@ $('#formulario-rbtn4').on('click', function () {
     }   
 });
 
-$('#cuestionario1').on('click', function () {
-    
-    var rta = $('input[name=cuestionario1]:checked', '#cuestionario1').val();
-   
-    if (rta == "densidad1" || rta == "volumen1" || rta == "masa1") {
+
+/* controlador del checkbox:  https://stackoverflow.com/questions/9709209/html-select-only-one-checkbox-in-a-group */
+
+$("input:checkbox").on('click', function () {
+    var $box = $(this);
+    if ($box.is(":checked")) {
+      // the name of the box is retrieved using the .attr() method
+      // as it is assumed and expected to be immutable
+      var group = "input:checkbox[name='" + $box.attr("name") + "']";
+      // the checked state of the group/box on the other hand will change
+      // and the current value is retrieved using .prop() method
+      $(group).prop("checked", false);
+      $box.prop("checked", true);
+      var rta = $box.attr('value');
+     /* alert(rta);*/
+      
+      /*verify the answer*/  
+      if (rta == "densidad1" || rta == "volumen1" || rta == "masa1") {
         if (rta == "densidad1" || rta == "volumen1") {
             $('#check2').css('visibility', 'visible');
             $('#check1').css('visibility', 'hidden');
+            $('#cuestionario1.2').attr('checked', false)
            
         }
         else if (rta == "masa1") {
             $('#check1').css('visibility', 'visible');
             $('#check2').css('visibility', 'hidden');
-           
-        }
-    }  
-    else if (rta == "densidad2" || rta == "volumen2" || rta == "masa2") {
+          }
+      }
+      else if (rta == "densidad2" || rta == "volumen2" || rta == "masa2") {
         if ( rta == "densidad2" || rta == "masa2") {
             $('#check4').css('visibility', 'visible');
             $('#check3').css('visibility', 'hidden');
@@ -165,8 +179,7 @@ $('#cuestionario1').on('click', function () {
             $('#check4').css('visibility', 'hidden');
             
         }
-    }
-    else if (rta == "densidad3" || rta == "volumen3" || rta == "masa3") {
+    }else if (rta == "densidad3" || rta == "volumen3" || rta == "masa3") {
         if ( rta == "volumen3" || rta == "masa3") {
             $('#check6').css('visibility', 'visible');
             $('#check5').css('visibility', 'hidden');
@@ -249,8 +262,16 @@ $('#cuestionario1').on('click', function () {
             $('#check18').css('visibility', 'hidden');
            
         }
+    }  
+        
+        
+    }
+    else
+    {
+      $box.prop("checked", false);
     }
 });
+
 
 
 
