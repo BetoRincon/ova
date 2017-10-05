@@ -10,13 +10,19 @@
 */
 
 
-$('#btn').click(function () {
+$('#btn1').click(function () {
     
-    calcularDensidad();  
+    calcularDensidad("ejercicio 1");  
     
 });
-
-function calcularDensidad() {
+$('#btn2').click(function () {
+    
+    calcularDensidad("ejercicio 2");  
+    
+});
+function calcularDensidad(ejercicio) {
+    /*alert(ejercicio);*/
+    
     var masa = $('#formulario-masa').val();
     var volumen =$('#formulario-volumen').val();
     var densidad = $('#formulario-densidad').val();
@@ -32,49 +38,146 @@ function calcularDensidad() {
     densidad = densidad.toLowerCase();
 
     /* verificación strings */
-    if (masa.includes('50g') || masa.includes('50 g') || masa.includes('50 gramos') || masa.includes('50gramos') || masa.includes('50[gramos]') || masa.includes('50 [gramos]') || masa.includes('50[g]') || masa.includes('50 [g]')) {
-        masaOk = true;
-        /*alert(masaOk);*/
-    }
-    if (volumen.includes('10ml') || volumen.includes('10 ml') || volumen.includes('10 mililitros ') || volumen.includes('10mililitros ') || volumen.includes('10[mililitros]') || volumen.includes('10 [mililitros]') || volumen.includes('10[ml]') || volumen.includes('10 [ml]')) {
-        volumenOk = true;
-       /* alert(volumenOk);*/
-    }
-    if (densidad.includes('5g/ml') || densidad.includes('5 g/ml') || densidad.includes('5 [g/ml]')|| densidad.includes('5[g/ml]')) {
-        densidadOk = true;
-        /*alert(densidadOk);*/
-    }
+    if (ejercicio == "ejercicio 1") {
+        if (masa.includes('50g') || masa.includes('50 g') || masa.includes('50 gramos') || masa.includes('50gramos') || masa.includes('50[gramos]') || masa.includes('50 [gramos]') || masa.includes('50[g]') || masa.includes('50 [g]')) {
+            masaOk = true;
+            /*alert(masaOk);*/
+        }
+        if (volumen.includes('10ml') || volumen.includes('10 ml') || volumen.includes('10 mililitros ') || volumen.includes('10mililitros ') || volumen.includes('10[mililitros]') || volumen.includes('10 [mililitros]') || volumen.includes('10[ml]') || volumen.includes('10 [ml]')) {
+            volumenOk = true;
+            /* alert(volumenOk);*/
+        }
+        if (densidad.includes('5g/ml') || densidad.includes('5 g/ml') || densidad.includes('5 [g/ml]') || densidad.includes('5[g/ml]')) {
+            densidadOk = true;
+            /*alert(densidadOk);*/
+        }
     
-    if (densidad != $('#formulario-densidad').val())
-    {
-        $('#incorrecto').css('display', 'inline-block');
-        $('#correcto').css('display', 'none');
-        $('#validacion').css('display', 'none');
-    }
-    if (masa==""||volumen==""||densidad=="") {
-        $('#validacion').css('display', 'inline-block');
-        $('#incorrecto').css('display', 'none');
-        $('#correcto').css('display', 'none');        
-    }
+        if (densidad != $('#formulario-densidad').val()) {
+            $('#incorrecto').css('display', 'inline-block');
+            $('#correcto').css('display', 'none');
+            $('#validacion').css('display', 'none');
+        }
+        if (masa == "" || volumen == "" || densidad == "") {
+            $('#validacion').css('display', 'inline-block');
+            $('#incorrecto').css('display', 'none');
+            $('#correcto').css('display', 'none');
+        }
 
-    if (densidadOk == true && volumenOk == true && masaOk == true) {
-        /*alert("entró if");*/
-        $('#correcto').css('display', 'inline-block');
-        $('#incorrecto').css('display', 'none');
-        $('#validacion').css('display', 'none');
-        /*https://stackoverflow.com/questions/1414365/disable-enable-an-input-with-jquery*/ 
-        $('#formulario-masa').prop('disabled', true);
-        $('#formulario-volumen').prop('disabled', true);
-        $('#formulario-densidad').prop('disabled', true);
-    } else {
-        $('#incorrecto').css('display', 'inline-block');
-        $('#correcto').css('display', 'none');
-        $('#validacion').css('display', 'none');
+        if (densidadOk == true && volumenOk == true && masaOk == true) {
+            /*alert("entró if");*/
+            $('#correcto').css('display', 'inline-block');
+            $('#incorrecto').css('display', 'none');
+            $('#validacion').css('display', 'none');
+            /*https://stackoverflow.com/questions/1414365/disable-enable-an-input-with-jquery*/
+            $('#formulario-masa').prop('disabled', true);
+            $('#formulario-volumen').prop('disabled', true);
+            $('#formulario-densidad').prop('disabled', true);
+        } else {
+            $('#incorrecto').css('display', 'inline-block');
+            $('#correcto').css('display', 'none');
+            $('#validacion').css('display', 'none');
+        }
+    } 
+    if (ejercicio == "ejercicio 2") {
+        if (masa.includes('20g') || masa.includes('20 g') || masa.includes('20 gramos') || masa.includes('20gramos') || masa.includes('20[gramos]') || masa.includes('20 [gramos]') || masa.includes('20[g]') || masa.includes('20 [g]')) {
+            masaOk = true;
+            /*alert(masaOk);*/
+        }
+        if (volumen.includes('5ml') || volumen.includes('5 ml') || volumen.includes('5 mililitros ') || volumen.includes('5mililitros ') || volumen.includes('5[mililitros]') || volumen.includes('5 [mililitros]') || volumen.includes('5[ml]') || volumen.includes('5 [ml]')) {
+            volumenOk = true;
+            /* alert(volumenOk);*/
+        }
+        if (densidad.includes('4g/ml') || densidad.includes('4 g/ml') || densidad.includes('4 [g/ml]') || densidad.includes('4[g/ml]')) {
+            densidadOk = true;
+            /*alert(densidadOk);*/
+        }
+    
+        if (densidad != $('#formulario-densidad').val()) {
+            $('#incorrecto').css('display', 'inline-block');
+            $('#correcto').css('display', 'none');
+            $('#validacion').css('display', 'none');
+        }
+        if (masa == "" || volumen == "" || densidad == "") {
+            $('#validacion').css('display', 'inline-block');
+            $('#incorrecto').css('display', 'none');
+            $('#correcto').css('display', 'none');
+        }
+
+        if (densidadOk == true && volumenOk == true && masaOk == true) {
+            /*alert("entró if");*/
+            $('#correcto').css('display', 'inline-block');
+            $('#incorrecto').css('display', 'none');
+            $('#validacion').css('display', 'none');
+            /*https://stackoverflow.com/questions/1414365/disable-enable-an-input-with-jquery*/
+            $('#formulario-masa').prop('disabled', true);
+            $('#formulario-volumen').prop('disabled', true);
+            $('#formulario-densidad').prop('disabled', true);
+        } else {
+            $('#incorrecto').css('display', 'inline-block');
+            $('#correcto').css('display', 'none');
+            $('#validacion').css('display', 'none');
+        }
     }
    
 }
 
-$('#formulario-rbtn').on('click', function () {
+function verificarPreguntas() {
+
+    var rta = $('input[name=gridRadios]:checked', '#formulario-rbtn').val();
+    var rta2 = $('input[name=gridRadios2]:checked', '#formulario-rbtn2').val();
+    var rta3 = $('input[name=gridRadios3]:checked', '#formulario-rbtn3').val();
+    var rta4 = $('input[name=gridRadios4]:checked', '#formulario-rbtn4').val();
+    if ( rta == "D") {
+        $('#check1').css('visibility', 'visible');
+        $('#check2').css('visibility', 'hidden');
+        $('input[name=gridRadios]').prop('disabled', true);
+    }
+    else if(rta=="A"||rta=="B"||rta=="C"||rta=="E"||rta=="F" ) {
+        $('#check1').css('visibility', 'hidden');
+        $('#check2').css('visibility', 'visible');
+        $('input[name=gridRadios]').prop('disabled', true);
+    }
+    
+    if ( rta2 == "E") {
+        $('#check3').css('visibility', 'visible');
+        $('#check4').css('visibility', 'hidden');
+        $('input[name=gridRadios2]').prop('disabled', true);
+        
+    }
+   else if(rta2=="A"||rta2=="B"||rta2=="C"||rta2=="D"||rta2=="F" ) {
+        $('#check3').css('visibility', 'hidden');
+        $('#check4').css('visibility', 'visible');
+        $('input[name=gridRadios2]').prop('disabled', true);
+    }
+    
+    
+    if (rta3 == "A") {
+        $('#check5').css('visibility', 'visible');
+        $('#check6').css('visibility', 'hidden');
+        $('input[name=gridRadios3]').prop('disabled', true);
+        
+    }
+   else if(rta3=="E"||rta3=="B"||rta3=="C"||rta3=="D"||rta3=="F" ) {
+        $('#check5').css('visibility', 'hidden');
+        $('#check6').css('visibility', 'visible');
+        $('input[name=gridRadios3]').prop('disabled', true);
+    }
+    
+    
+    if (rta4 == "B") {
+        $('#check7').css('visibility', 'visible');
+        $('#check8').css('visibility', 'hidden');
+        $('input[name=gridRadios4]').prop('disabled', true);
+        
+    }
+   else if(rta4=="E"||rta4=="A"||rta4=="C"||rta4=="D"||rta4=="F" ) {
+        $('#check7').css('visibility', 'hidden');
+        $('#check8').css('visibility', 'visible');
+        $('input[name=gridRadios4]').prop('disabled', true);
+    } 
+}
+
+/*$('#formulario-rbtn').on('click', function () {
     var rta = $('input[name=gridRadios]:checked', '#formulario-rbtn').val();
     if ( rta == "D") {
         $('#check1').css('visibility', 'visible');
@@ -87,9 +190,9 @@ $('#formulario-rbtn').on('click', function () {
         $('input[name=gridRadios]').prop('disabled', true);
     }
    
-});
+});*/
 
-$('#formulario-rbtn2').on('click', function () {
+/*$('#formulario-rbtn2').on('click', function () {
     
     var rta = $('input[name=gridRadios2]:checked', '#formulario-rbtn2').val();
     if ( rta == "E") {
@@ -103,9 +206,9 @@ $('#formulario-rbtn2').on('click', function () {
         $('#check4').css('visibility', 'visible');
         $('input[name=gridRadios2]').prop('disabled', true);
     }   
-});
+});*/
 
-$('#formulario-rbtn3').on('click', function () {
+/*$('#formulario-rbtn3').on('click', function () {
     
     var rta = $('input[name=gridRadios3]:checked', '#formulario-rbtn3').val();
     
@@ -120,9 +223,9 @@ $('#formulario-rbtn3').on('click', function () {
         $('#check6').css('visibility', 'visible');
         $('input[name=gridRadios3]').prop('disabled', true);
     }   
-});
+});*/
 
-$('#formulario-rbtn4').on('click', function () {
+/*$('#formulario-rbtn4').on('click', function () {
     
     var rta = $('input[name=gridRadios4]:checked', '#formulario-rbtn4').val();
     
@@ -137,7 +240,7 @@ $('#formulario-rbtn4').on('click', function () {
         $('#check8').css('visibility', 'visible');
         $('input[name=gridRadios4]').prop('disabled', true);
     }   
-});
+});*/
 
 
 /* controlador del checkbox:  https://stackoverflow.com/questions/9709209/html-select-only-one-checkbox-in-a-group */
@@ -145,10 +248,11 @@ $('#formulario-rbtn4').on('click', function () {
 $("input:checkbox").on('click', function () {
     var $box = $(this);
     if ($box.is(":checked")) {
-      // the name of the box is retrieved using the .attr() method
-      // as it is assumed and expected to be immutable
-      var group = "input:checkbox[name='" + $box.attr("name") + "']";
-      // the checked state of the group/box on the other hand will change
+      // Para saber si está en check
+     
+        var group = "input:checkbox[name='" + $box.attr("name") + "']";
+      // Obtenemos el name de los checkbox del grupo de preguntas y lo asignamos a
+      //group  
       // and the current value is retrieved using .prop() method
       $(group).prop("checked", false);
       $box.prop("checked", true);

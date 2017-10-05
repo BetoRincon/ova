@@ -171,7 +171,7 @@
 #svg-escritorio{
     padding: 0;
 }
-#instrumento-balin{
+#instrumento-balin, #instrumento-anillo{
     position: relative;
     height: 100%;
     width: 33.3%;
@@ -194,7 +194,7 @@
     left: 67%;
     top: -33%;
 }
-#svg-balin-balanza{
+#svg-balin-balanza, #svg-anillo-balanza{
     position: relative;
     height: 60%;
     border: solid 1px royalblue;
@@ -211,8 +211,8 @@
     top: 26%;
     left: 14%;
 }
-#balin4, #balin5{
-    visibility: hidden;
+#balin4, #balin5, #anillo5{
+   visibility: hidden;
 }
  #_x34_0ml, #_x33_5ml{
     visibility: hidden;
@@ -221,4 +221,20 @@
     color: #fff;
     background-color: #03935c;
     border-color: #03935c;
+}
+#svg-anillo{
+    position: relative;
+    /*border: solid 1px royalblue;*/
+    height: 21%;
+    left: 35%;
+    top: 78%;
+}
+#svg-anillo2{
+    position: relative;
+    border: solid 1px royalblue;
+    height: 103%;
+    left: 0%;
+    top: 9%;
+    width: 100%;
+    z-index: 2;
 }

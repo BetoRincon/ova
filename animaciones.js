@@ -8,6 +8,7 @@ $balin2 = $('#balin2');
 $balin3 = $('#balin3');
 $balin4 = $('#balin4');
 $balin5 = $('#balin5');
+$anillo5 = $('#anillo5');
 $bolaIcopor = $('#bola-icopor');
 $glicerina = $('#glicerina');
 $alcohol = $('#alcohol');
@@ -24,7 +25,7 @@ $alcohol.css('visibility', 'hidden');
 $agua.css('visibility', 'hidden');
 $aceite.css('visibility', 'hidden');
 $miel.css('visibility', 'hidden');
-
+var ej2Auth = true; 
 
 
 
@@ -159,13 +160,18 @@ function drop(ev) {
     
     /*obtener id de elemnto draggable, sin esta linea no funciona el evento de drop*/
     var data = ev.dataTransfer.getData("text");
-    /*alert(data);*/
+   /* alert(data);*/
      //para controlar la entrada de fluidos en ejercicio1 y las animaciones de ejercicio2
     
     if (data == "instrumento-balin") {
         $balin4.css('visibility', 'visible');
         TweenMax.fromTo($balin4, 0.5, { y: -50, onComplte: showSixej2() }, { y: 0, onComplte: showSixej2() });
     }
+    if (data == "instrumento-anillo") {
+        $balin4.css('visibility', 'visible');
+        TweenMax.fromTo($balin4, 0.5, { y: -120, onComplte: showSixej3() }, { y: 0, onComplte: showSixej3() });
+    }
+
     if (data == "svg-balin-balanza") {
         $('#svgbalin4').css('display', 'none');
         $('#balin5').css('visibility', 'visible');
@@ -173,10 +179,24 @@ function drop(ev) {
         var masterTl = new TimelineMax();
         masterTl
             .fromTo($balin5, 0.5, { y: -550 }, { y: -20 })
+            /*.fromTo($anillo5, 0.5, { y: 0 }, { y: 790 })*/
             .to($('#_x34_0ml'), 0.3, { css: { visibility: 'visible' } }, '-=0.2')
-            .to($('#_x33_0ml'), 0.3, { css: { visibility: 'visible' } });            
-
+            .to($('#_x33_0ml'), 0.3, { css: { visibility: 'visible' } });
     }
+    if (data == "svg-anillo-balanza") {
+        $('#svg-anillo2').css('display', 'none');
+        $('#anillo5').css('visibility', 'visible');
+        hideSixej3();
+        var masterTl = new TimelineMax();
+        masterTl
+            
+            .fromTo($anillo5, 0.5, { y: 0 }, { y: 470 })
+            .to($('#_x33_5ml'), 0.3, { css: { visibility: 'visible' } }, '-=0.2')
+            .to($('#_x33_0ml'), 0.3, { css: { visibility: 'visible' } });
+    }
+
+
+   
     
     
     if (data == "lista-Balin" && contador==0) {
@@ -293,11 +313,23 @@ function animacion2(a) {
         TweenMax.fromTo($('#_x35_'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, delay: 0.4 });
         TweenMax.fromTo($('#_0b'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, delay: 0.4 });
         }  
-        function hideSixej2() {
+    function hideSixej2() {
             
             TweenMax.fromTo($('#_0b'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, });
             TweenMax.fromTo($('#_x35_'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, });
-        }  
+    } 
+    
+    function showSixej3() {
+        
+        TweenMax.fromTo($('#_x32_'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, delay: 0.4 });
+        TweenMax.fromTo($('#_0b'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, delay: 0.4 });
+    }
+    
+    function hideSixej3() {
+        
+        TweenMax.fromTo($('#_0b'), 0.2, { autoAlpha: 0, delay: 0.4 }, { autoAlpha: 1, });
+        TweenMax.fromTo($('#_x32_'), 0.2, { autoAlpha: 1, delay: 0.4 }, { autoAlpha: 0, });
+} 
 
 
 
