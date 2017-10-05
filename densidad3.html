@@ -49,14 +49,24 @@
             <div id="superior">
                 <p>El volumen se determina por el desplazamiento del liquido</p>
             </div>
-
             <div id="medio">
-                  <div id="probetas" style="text-align:center">
+
+                  <div id="probetas" style="text-align:center; vertical-align: middle;">
+                    <div id="izquierdo">
+                    <p style="position: absolute;top: 50%;left: 50%;height: 30%;width: 50%;margin: -5% 0 0 0;">Volumen incial 20ml</p>
+                    </div>
+                    <div id="centro">
                     <video height="100%" autoplay="autoplay" loop>
                       <source src="assets\img\ani1-probeta.mp4" type="video/mp4">
                       Your browser does not support the video tag.
-                    </video>
+                    </video>                    
+                    </div>
+                    <div id="derecho">
+                    <p style="position: absolute;top: 50%;left: 50%;height: 30%;width: 50%;margin: -5% 0 0 -50%;">Volumen final 23ml</p>
+                    </div>
                   </div>
+
+                  
                   <div id="volumenes">
                       <p>Volumen final –volumen inicial = Volumen del objeto <br>
                             23 ml -20 ml = 3 ml</p>
@@ -148,6 +158,8 @@
                 </div>
 
                 <div id="derecho">
+                    <img src="assets/img/muestra-densidad.svg">
+                    </div>
 
                 </div>
 
@@ -202,7 +214,8 @@
    <script src="assets/js/TweenMax.min.js"></script>
    <script src="main.js"></script>
    <script src="animaciones.js"></script>
-    
+   <div style=" position: fixed; bottom: 0; right: 0; background-color: #dddddd"><p style="font-family: tahoma; font-size: 12px;">Potenciado por <a href="http://museodigital.org" target="_blank">Museo Digital</a></p>
+   </div>    
 
 </body>
 </html>
