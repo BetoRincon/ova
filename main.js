@@ -153,7 +153,7 @@ $("input:checkbox").on('click', function () {
       $(group).prop("checked", false);
       $box.prop("checked", true);
       var rta = $box.attr('value');
-      alert(rta);
+     /* alert(rta);*/
       
       /*verify the answer*/  
       if (rta == "densidad1" || rta == "volumen1" || rta == "masa1") {
