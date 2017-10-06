@@ -27,6 +27,11 @@ $aceite.css('visibility', 'hidden');
 $miel.css('visibility', 'hidden');
 var ej2Auth = true; 
 
+/*Animacion de preguntas */
+$pregunta1 = $('#pregunta1');
+$pregunta2 = $('#pregunta2');
+$pregunta3 = $('#pregunta3');
+$anuncioRta = $('#anuncioRespuesta');
 
 
 //carga de pag
@@ -34,13 +39,107 @@ $(document).ready(function () {
     $('#svg-fluidos').css('display', 'block');
     contador = 0;
     auth = false;
+    
+    
 
     
 });
 
+/* Funcion que retrasa la aparicion de los div */
+function playPreguntas(hola) {
+    
+    
+    setTimeout(function ()
+    {
+        /*https://stackoverflow.com/questions/21850830/jquery-delay-a-variables-play-function */
+        /*https://www.w3schools.com/Jsref/met_audio_play.asp */
+        document.getElementById("audio").play();
+    }, 1000)
+    
+    var masterTl = new TimelineMax();
+    masterTl/* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
+    cidad y el último número es el retraso. Es el retraso el que modifica*/
+            .to($pregunta1,1.2,{autoAlpha:1},2)
+        .to($pregunta2, 1.2, { autoAlpha: 1 }, '+=1.5')
+        .to($pregunta3, 1.2, { autoAlpha: 1 }, '+=5.5')
+        .to($anuncioRta,1.2,{autoAlpha:1},'+=5.5')  
+}
+
+function playPreguntas2() {
+    
+    
+    setTimeout(function () {
+        /*https://stackoverflow.com/questions/21850830/jquery-delay-a-variables-play-function */
+        /*https://www.w3schools.com/Jsref/met_audio_play.asp */
+        document.getElementById("audio").play();
+    }, 1000);
+
+
+    
+    var masterTl = new TimelineMax();
+    masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
+    cidad y el último número es el retraso. Es el retraso el que modifica*/
+            .to($('.superior'),2,{autoAlpha:1},1)
+        .to($('.columna1 > #densidad'), 1.2, { autoAlpha: 1 }, '+=10')
+        .to($('.columna1 > #lista'), 1.2, { autoAlpha: 1 }, '+=4')
+        .to($('.columna2 > #densidad'), 1.2, { autoAlpha: 1 }, '+=25')
+        .to($('.columna2 > #lista'), 1.2, { autoAlpha: 1 }, '+=4')
+}
+
+function playPreguntas3() {
+    
+    
+    setTimeout(function () {
+        /*https://stackoverflow.com/questions/21850830/jquery-delay-a-variables-play-function */
+        /*https://www.w3schools.com/Jsref/met_audio_play.asp */
+        document.getElementById("audio").play();
+    }, 1000);
+
+
+    
+    var masterTl = new TimelineMax();
+    masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
+    cidad y el último número es el retraso. Es el retraso el que modifica*/
+            .to($('#densidad-texto-sup'),2,{autoAlpha:1},1)
+        .to($('#densidad-formula-grande'), 1.2, { autoAlpha: 1 }, '+=5')
+        .to($('#densidad-texto-medio'), 1.2, { autoAlpha: 1 }, '+=0.1')
+        .to($('#densidad-formula-medio'), 1.2, { autoAlpha: 1 }, '+=0.5')
+        .to($('#densidad-texto-bajo'), 1.2, { autoAlpha: 1 }, '+=0.2')
+        .to($('#densidad-formula-bajo'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('#directa'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('#indirecta'), 1.2, {autoAlpha: 1 }, '+=15')
+        
+}
+
+
+function playPreguntas4() {
+    
+    
+    setTimeout(function () {
+        /*https://stackoverflow.com/questions/21850830/jquery-delay-a-variables-play-function */
+        /*https://www.w3schools.com/Jsref/met_audio_play.asp */
+        document.getElementById("audio").play();
+    }, 1000);
+
+
+    
+    var masterTl = new TimelineMax();
+    masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
+    cidad y el último número es el retraso. Es el retraso el que modifica*/
+            .to($('.superior'),2,{autoAlpha:1},1)
+        .to($('#densidad-formula-grande'), 1.2, { autoAlpha: 1 }, '+=5')
+        .to($('#densidad-texto-medio'), 1.2, { autoAlpha: 1 }, '+=0.1')
+        .to($('#densidad-formula-medio'), 1.2, { autoAlpha: 1 }, '+=0.5')
+        .to($('#densidad-texto-bajo'), 1.2, { autoAlpha: 1 }, '+=0.2')
+        .to($('#densidad-formula-bajo'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('#directa'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('#indirecta'), 1.2, {autoAlpha: 1 }, '+=15')
+        
+}
+
 //eventos
 
-$adelante.click(function () {
+/*$adelante.click(function () {
      
   // alert(window.location.href);
     var ubicacion = "http://localhost/ova/";
@@ -71,9 +170,9 @@ $adelante.click(function () {
             break;
         
     }
-});
+});*/
 
-$atras.click(function () {
+/*$atras.click(function () {
     
  // alert(window.location.href);
    var ubicacion = "http://localhost/ova/";
@@ -102,9 +201,9 @@ $atras.click(function () {
            break;
            
    }
-});
+});*/
 
-$refrescar.click(function () {
+/*$refrescar.click(function () {
     reload();
     function loadPage() {
         location.reload();
@@ -112,8 +211,8 @@ $refrescar.click(function () {
     }
     /* https://www.w3schools.com/js/js_timing.asp */
     
-    
-});
+  /*  
+});*/
 
 $cuadroVerde.click(function () {
     //reload();
