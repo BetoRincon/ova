@@ -18,6 +18,7 @@
     /*border: solid 1px deeppink;*/
     text-align: center;
     padding: 4%;
+    visibility: hidden;
 }
  #densidad-texto-inf{
     position: relative;
@@ -25,7 +26,8 @@
     width: 100%;
    /* border: solid 1px deeppink;*/
     top:26%;
-    left: 0%;    
+    left: 0%;   
+    visibility: hidden; 
 }
 
 #densidad-texto-sup p{
@@ -43,6 +45,8 @@
    /* border: solid 1px deeppink;*/
     float: left;
     font-size: 23px;
+    visibility: hidden;
+
 }
 #D{
     position: relative;
@@ -82,6 +86,7 @@
     width: 100%;
     top: 33%;
     text-align: center;
+    visibility: hidden;
 }
 
 #densidad-texto-medio p{
@@ -96,6 +101,7 @@
     width: 33%;
     top: 47%;
     left: 35%;
+    visibility: hidden;
 }
 #densidad-medio{
     position: absolute;
@@ -129,6 +135,7 @@
     width: 100%;
     top: 61%;
     text-align: center;
+    visibility: hidden;
 }
 
 #densidad-texto-bajo p{
@@ -143,6 +150,7 @@
     width: 33%;
     top: 75%;
     left: 35%;
+    visibility: hidden;
 }
 #densidad-bajo{
     position: absolute;
@@ -260,4 +268,8 @@
 #directa, #indirecta{
     position: relative;
     left: 16%;
+    visibility: hidden;
+}
+audio{
+    visibility: hidden;
 }

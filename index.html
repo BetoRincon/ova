@@ -20,7 +20,7 @@
         
         <div class="columna1">
 
-        <div class="preguntas" id="pregunta1">
+        <div class="preguntas" id="pregunta1" >
             <p>¿Por qué el aceite flota en el agua? </p>
         </div>
         <div class="preguntas" id="pregunta2">
@@ -78,13 +78,13 @@
             <p  v-if="seen">{{ message }}</p>
          </div>
         -->
-          <audio controls autoplay>
-          <source src="assets/img/audio1.ogg" type="audio/ogg">
-          <source src="assets/img/audio1.mp3" type="audio/mpeg">
+          <audio style="visibility: hidden;" id="audio" controls="controls" onloadeddata="playPreguntas('Hola')" >
+          <source id="audio"  src="assets/img/audio1.ogg" type="audio/ogg">
+          <source  id="audio"  src="assets/img/audio1.mp3" type="audio/mpeg">
           Tu navegador no soporta elementos de audio.
          </audio>   
    
-   <script src="vue.js"></script>
+   
    <script src="assets/js/TweenMax.min.js"></script>
    <script src="main.js"></script>
    <script src="animaciones.js"></script>

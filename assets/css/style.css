@@ -116,4 +116,10 @@ html,body{
     }
    audio{
     width: 100px;
+   /*visibility: hidden;*/
    }
+   .preguntas, #anuncioRespuesta{
+       visibility: hidden;
+   }
+  
+   

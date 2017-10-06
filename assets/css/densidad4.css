@@ -37,6 +37,7 @@
      border: solid 1px greenyellow;
      height: 25%;
      width: 100%;
+     
  }
  #inferior{
     position: relative;
@@ -75,7 +76,11 @@
     margin-top: 10px;
     background-color: #066595;
     border-radius: 10px;
+    visibility: hidden;
 }
 .texto-superior{
     color: #ffffff;
+}
+audio{
+    visibility: hidden;
 }
