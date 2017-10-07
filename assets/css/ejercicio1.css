@@ -1,5 +1,5 @@
 .columna1, .columna2{
-    border: solid 1px blueviolet;
+    /*border: solid 1px blueviolet;*/
     padding: 0; 
     padding: 0;
     top: 5%;  
@@ -24,7 +24,7 @@
 
 #content{
    position: relative;
-   border: solid 1px greenyellow;
+   /*border: solid 1px greenyellow;*/
    height: 100%;
    width: 100%;
    padding: 8%;
@@ -32,7 +32,7 @@
 }
 #derecha{
     position: relative;
-    border: solid 1px greenyellow;
+    /*border: solid 1px greenyellow;*/
     height: 100%;
     width: 70%;
    /* padding: 8%;*/
@@ -40,7 +40,7 @@
 }
 #izquierda{
     position: relative;
-    border: solid 1px greenyellow;
+    /*border: solid 1px greenyellow;*/
     height: 100%;
     width: 30%;
     padding: 8%;
@@ -56,7 +56,7 @@
 #tabla{
     position: relative;
     top: 0%;
-    border: solid 1px greenyellow;
+    /*border: solid 1px greenyellow;*/
     height: 100%;
     width: 70%;
     float: left;
@@ -65,14 +65,14 @@
 #lista-fluidos{
     position: relative;
     top: 0%;
-    border: solid 1px greenyellow;
+    /*border: solid 1px greenyellow;*/
     height: 100%;
     width: 30%;
     float: left;
 }
 .lista{
     position: relative;
-    border: solid 1px blueviolet;
+    /*border: solid 1px blueviolet;*/
     height: 50%;
     width: 100%;
     top: 0%;
@@ -87,7 +87,7 @@
     position: absolute;
     height: 16%;
     width: 100%;
-    border: solid 1px blueviolet;
+    /*border: solid 1px blueviolet;*/
     top: 0%;
     left: 0%;
     visibility: hidden;

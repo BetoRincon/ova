@@ -7,7 +7,7 @@
 #formulario{
     position: relative;
     width: 100%;
-    border: solid 1px #066595;
+   /* border: solid 1px #066595;*/
     text-align: center;
     background-color: rgba(6, 101, 149, 0.3);
     color: #032E44;

@@ -1,5 +1,5 @@
 .columna1, .columna2{
-    border: solid 1px blueviolet;
+    /*border: solid 1px blueviolet;*/
     padding: 0; 
     padding: 0;
     top: 5%;  
@@ -24,7 +24,7 @@
 }
 #content{
     position: relative;
-    border: solid 1px greenyellow;
+    /*border: solid 1px greenyellow;*/
     height: 100%;
     width: 100%;
     padding: 20px;
@@ -34,14 +34,14 @@
  }
  #superior{
      position: relative;
-     border: solid 1px greenyellow;
+     /*border: solid 1px greenyellow;*/
      height: 25%;
      width: 100%;
      
  }
  #inferior{
     position: relative;
-    border: solid 1px greenyellow;
+    /*border: solid 1px greenyellow;*/
     height: 75%;
     width: 100%;
     font-size: 15px;
@@ -69,7 +69,7 @@
     position: relative;
     width: 80%;
     height: 2%;
-    border: 1px solid blueviolet;
+    /*border: 1px solid blueviolet;*/
     padding: 2%;
     text-align: center;
     margin-left: 50px;

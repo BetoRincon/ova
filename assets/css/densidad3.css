@@ -23,10 +23,10 @@
 }
 #separador2{
     position: relative;
-    border: solid 1px greenyellow;
+  /*  border: solid 1px greenyellow;*/
     background-color: #066595;
     border-radius: 5px;
-    height: 3%;
+    height: 1%;
     width: 80%;
     left: 11%;
 }
@@ -34,7 +34,7 @@
 #title-arquim
 {
     position: relative;
-    border: solid 1px greenyellow;
+  /*  border: solid 1px greenyellow;*/
     height: 30%;
     width: 100%;
     text-align: center;
@@ -44,14 +44,14 @@
 }
 #content{
     position: relative;
-    border: solid 1px greenyellow;
+ /*   border: solid 1px greenyellow;*/
     height: 59%;
     width: 100%;
     padding: 8%;
 }
 #superior{
     position: relative;
-    border: solid 1px greenyellow;
+ /*   border: solid 1px greenyellow;*/
     height: 9%;
     width: 100%;
     font-size: 24px;
@@ -60,24 +60,24 @@
 }
 #medio{
     position: relative;
-    border: solid 1px greenyellow;
+ /*   border: solid 1px greenyellow;*/
     height: 58%;
     width: 100%;
 }
 #inferior{
     position: relative;
-    border: solid 1px greenyellow;
+  /*  border: solid 1px greenyellow;*/
     height: 29%;
     width: 100%;
 }
 #probetas{
     position: relative;
-    border: solid 1px greenyellow;
+   /* border: solid 1px greenyellow;*/
     height: 73%;    
 }
 #volumenes{
     position: relative;
-    border: solid 1px deeppink;
+   /* border: solid 1px deeppink;*/
     height: 27%;
     text-align: center;
     font-size: 15px;
@@ -87,7 +87,7 @@
 #izquierdo{
     position: relative;
     /* display: inline; */
-    border: solid 1px deeppink;
+   /* border: solid 1px deeppink;*/
     height: 100%;
     width: 35%;
     text-align: right;
@@ -98,7 +98,7 @@
 #centro{
     position: relative;
     /*display: inline;*/
-    border: solid 1px deeppink;
+    /*border: solid 1px deeppink;*/
     height: 100%;
     width: 30%;
     text-align: center;
@@ -108,7 +108,7 @@
 #derecho{
     position: relative;
     /* display: inline; */
-    border: solid 1px deeppink;
+    /*border: solid 1px deeppink;*/
     height: 100%;
     width: 35%;
     text-align: left;
@@ -119,13 +119,13 @@
 #svg-balanza{
     position: relative;
     /* display: inline; */
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     height: 70%;   
 }
 #esfera{
     position: relative;
     /* display: inline; */
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     height: 30%;
 }
 #esfera2{
@@ -133,7 +133,7 @@
     display: block;
     margin: auto;
     /* display: inline; */
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     height: 100%;
 }
 #svg-esfera{
@@ -157,14 +157,14 @@
     position: relative;
     width: 100%;
     height:50%;
-    border: solid 1px deeppink;
+    /*border: solid 1px deeppink;*/
 }
 #instrumentos{
     position: relative;
     width: 70%;
     height: 51%;
     left: 15%;
-    border: solid 1px deeppink;
+    /*border: solid 1px deeppink;*/
     top: 15%;
     z-index: 1;
 }
@@ -175,21 +175,21 @@
     position: relative;
     height: 100%;
     width: 33.3%;
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     float: left ;
 }
 #instrumento-balanza-balin{
     position: relative;
     height: 100%;
     width: 33.3%;
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     float: left ;
 }
 #instrumento-probeta{
     position: absolute;
     height: 132%;
     width: 33.3%;
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     float: left;
     left: 67%;
     top: -33%;
@@ -197,14 +197,14 @@
 #svg-balin-balanza, #svg-anillo-balanza{
     position: relative;
     height: 60%;
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     
     
 }
 #svgbalanza{
     position: relative;
     height: 40%;
-    border: solid 1px royalblue;    
+    /*border: solid 1px royalblue;*/
 }
 #probeta{
     position: relative;
@@ -231,7 +231,7 @@
 }
 #svg-anillo2{
     position: relative;
-    border: solid 1px royalblue;
+    /*border: solid 1px royalblue;*/
     height: 103%;
     left: 0%;
     top: 9%;
