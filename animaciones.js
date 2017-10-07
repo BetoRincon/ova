@@ -82,7 +82,7 @@ function playPreguntas2() {
             .to($('.superior'),2,{autoAlpha:1},1)
         .to($('.columna1 > #densidad'), 1.2, { autoAlpha: 1 }, '+=10')
         .to($('.columna1 > #lista'), 1.2, { autoAlpha: 1 }, '+=4')
-        .to($('.columna2 > #densidad'), 1.2, { autoAlpha: 1 }, '+=25')
+        .to($('.columna2 > #densidad'), 1.2, { autoAlpha: 1 }, '+=20')
         .to($('.columna2 > #lista'), 1.2, { autoAlpha: 1 }, '+=4')
 }
 
@@ -107,7 +107,16 @@ function playPreguntas3() {
         .to($('#densidad-texto-bajo'), 1.2, { autoAlpha: 1 }, '+=0.2')
         .to($('#densidad-formula-bajo'), 1.2, { autoAlpha: 1 }, '+=1')
         .to($('#directa'), 1.2, { autoAlpha: 1 }, '+=1')
-        .to($('#indirecta'), 1.2, {autoAlpha: 1 }, '+=15')
+        .to($('#flecha1'), 1.2, { y: 0 }, '+=4')
+        .to($('#flecha2'), 1.2, { y: 0 }, '+=1')
+        .to($('#flecha3'), 1.2, { y: 0 }, '+=1')
+        .to($('#flecha4'), 1.2, { y: 0 }, '+=1')
+        .to($('#indirecta'), 1.2, {autoAlpha: 1 }, '+=4')
+        .to($('#flecha5'), 1.2, { y: 0 }, '+=1')
+        .to($('#flecha6'), 1.2, { y: 0, autoAlpha:1 }, '+=1')
+        .to($('#flecha7'), 1.2, { y: 0 }, '+=1')
+        .to($('#flecha8'), 1.2, { y:0, autoAlpha:1 }, '+=0.5')
+       
         
 }
 
@@ -136,6 +145,80 @@ function playPreguntas4() {
         .to($('#indirecta'), 1.2, {autoAlpha: 1 }, '+=15')
         
 }
+
+function playPreguntas5() {
+    
+    
+    setTimeout(function () {
+        /*https://stackoverflow.com/questions/21850830/jquery-delay-a-variables-play-function */
+        /*https://www.w3schools.com/Jsref/met_audio_play.asp */
+        document.getElementById("audio").play();
+    }, 1000);
+
+
+    
+    var masterTl = new TimelineMax();
+    masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
+    cidad y el último número es el retraso. Es el retraso el que modifica*/
+            .to($('#title-arquim'),2,{autoAlpha:1},1)
+        .to($('.columna1 #content'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('.columna2 > #superior'), 1.2, { autoAlpha: 1 }, '+=9')
+        .to($('#probetas > #centro'), 1.2, { autoAlpha: 1 }, '+=0.5')
+        .to($('#izquierdo'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('#derecho'), 1.2, { autoAlpha: 1 }, '+=2.5')
+        .to($('#volumenes'), 1.2, { autoAlpha: 1 }, '+=8')
+        .to($('#inferior > #izquierdo'), 1.2, { autoAlpha: 1 }, '+=28')
+        .to($('#inferior > #centro'), 1.2, { autoAlpha: 1 }, '+=2')
+        .to($('#inferior > #derecho'), 1.2, {autoAlpha: 1 }, '+=6')
+        
+}
+
+function playPreguntas6() {
+    
+    
+    setTimeout(function () {
+        /*https://stackoverflow.com/questions/21850830/jquery-delay-a-variables-play-function */
+        /*https://www.w3schools.com/Jsref/met_audio_play.asp */
+        document.getElementById("audio").play();
+    }, 1000);
+
+
+    
+    var masterTl = new TimelineMax();
+    masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
+    cidad y el último número es el retraso. Es el retraso el que modifica*/
+            .to($('.columna1 > #content'),2,{autoAlpha:1},1)
+        
+        
+}
+
+function playPreguntas7() {
+    
+    
+    setTimeout(function () {
+        /*https://stackoverflow.com/questions/21850830/jquery-delay-a-variables-play-function */
+        /*https://www.w3schools.com/Jsref/met_audio_play.asp */
+        document.getElementById("audio2").play();
+    }, 1000);
+
+
+    
+    var masterTl = new TimelineMax();
+    masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
+    cidad y el último número es el retraso. Es el retraso el que modifica*/
+            .to($('#derecha > #tabla'),1,{autoAlpha:1},2)
+        .to($('.item'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('.columna2 > #superior'), 1.2, { autoAlpha: 1 }, '+=9')
+        .to($('#probetas > #centro'), 1.2, { autoAlpha: 1 }, '+=0.5')
+        .to($('#izquierdo'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('#derecho'), 1.2, { autoAlpha: 1 }, '+=2.5')
+        .to($('#volumenes'), 1.2, { autoAlpha: 1 }, '+=8')
+        .to($('#inferior > #izquierdo'), 1.2, { autoAlpha: 1 }, '+=28')
+        .to($('#inferior > #centro'), 1.2, { autoAlpha: 1 }, '+=2')
+        .to($('#inferior > #derecho'), 1.2, {autoAlpha: 1 }, '+=6')
+        
+}
+
 
 //eventos
 

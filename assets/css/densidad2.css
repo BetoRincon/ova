@@ -268,5 +268,8 @@
 #directa, #indirecta{
     position: relative;
     left: 16%;
+   visibility: hidden;
+}
+#flecha6, #flecha8{
     visibility: hidden;
 }
