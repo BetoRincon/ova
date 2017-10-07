@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.04 115"><defs><style>.cls-1{fill:#03935c;}</style></defs><title>flecha-arriba</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polygon id="flecha-arriba" class="cls-1" points="29.02 0 0 50.27 16.45 50.27 16.45 115 41.59 115 41.59 50.27 58.04 50.27 29.02 0"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.04 115">
+  <defs>
+    <style>
+      .cls-1{fill:#03935c;}
+    </style>
+  </defs>
+  <title>
+    flecha-arriba
+  </title>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_1-2" data-name="Capa 1">
+      <path id="flecha-arriba" class="cls-1" d="M29.02 0L0 50.27h16.45V115h25.14V50.27h16.45L29.02 0z"/>
+    </g>
+  </g>
+</svg>
