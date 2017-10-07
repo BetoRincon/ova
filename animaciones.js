@@ -136,12 +136,12 @@ function playPreguntas4() {
     masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
     cidad y el último número es el retraso. Es el retraso el que modifica*/
             .to($('.superior'),2,{autoAlpha:1},1)
-        .to($('#densidad-formula-grande'), 1.2, { autoAlpha: 1 }, '+=5')
-        .to($('#densidad-texto-medio'), 1.2, { autoAlpha: 1 }, '+=0.1')
-        .to($('#densidad-formula-medio'), 1.2, { autoAlpha: 1 }, '+=0.5')
-        .to($('#densidad-texto-bajo'), 1.2, { autoAlpha: 1 }, '+=0.2')
-        .to($('#densidad-formula-bajo'), 1.2, { autoAlpha: 1 }, '+=1')
-        .to($('#directa'), 1.2, { autoAlpha: 1 }, '+=1')
+        .to($('#p1'), 1.2, { autoAlpha: 1 }, '+=6')
+        .to($('#img1'), 1.2, { autoAlpha: 1 }, '+=6')
+        .to($('#p2'), 1.2, { autoAlpha: 1 }, '+=20')
+        .to($('#img2'), 1.2, { autoAlpha: 1 }, '+=2')
+        .to($('#p3'), 1.2, { autoAlpha: 1 }, '+=35')
+        .to($('#img3'), 1.2, { autoAlpha: 1 }, '+=2')
         .to($('#indirecta'), 1.2, {autoAlpha: 1 }, '+=15')
         
 }
@@ -218,6 +218,8 @@ function playPreguntas7() {
         .to($('#inferior > #derecho'), 1.2, {autoAlpha: 1 }, '+=6')
         
 }
+
+
 
 
 //eventos
@@ -479,6 +481,8 @@ function animacion2(a) {
 
 
    /* balanza de densida 3 */
+
+   
     TweenMax.to($balin, 2, { y: 9,onStart:showSix ,onRepeat: showSix, repeat: -1 });
 
     /* onStart solo se ejecuta una vez al inicio. Se envía la misma función al
@@ -489,6 +493,8 @@ function animacion2(a) {
         
         TweenMax.fromTo($('#_6'),0.5, {autoAlpha:0, delay:1}, {autoAlpha:1, delay:1});TweenMax.fromTo($('#_0c'),0.5, {autoAlpha:1, delay:1}, {autoAlpha:0, delay:1});  
     } 
+
+
     /*Para el ejercicio2 */
     function showSixej2() {
         

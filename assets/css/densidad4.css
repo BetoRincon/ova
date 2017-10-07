@@ -81,4 +81,9 @@
 .texto-superior{
     color: #ffffff;
 }
-
+p[id^="p"]{
+    visibility: hidden;
+}
+img[id^='img']{
+    visibility: hidden;
+}
