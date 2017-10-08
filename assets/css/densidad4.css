@@ -81,6 +81,9 @@
 .texto-superior{
     color: #ffffff;
 }
-audio{
+p[id^="p"]{
+    visibility: hidden;
+}
+img[id^='img']{
     visibility: hidden;
 }

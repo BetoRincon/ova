@@ -31,7 +31,7 @@
                       <table>
                         <tr>
                           <td>La sustancia menos densa se ubica en la parte superior</td>
-                          <td><img class="flecha-arriba" src="assets/img/flecha-arriba.svg" ></td>
+                          <td><img class="flecha-arriba" src="assets/img/flecha-arriba.svg" transform="translate(0 -10)"></td>
                         </tr>
                         <tr>
                           <td>La sustancia mas densa se ubica en la parte inferior</td>
@@ -108,7 +108,7 @@
               </div>
 
               <div id="lista-fluidos">
-                <audio controls>
+                <audio audio id="audio2" controls="controls" onplay="playPreguntas7()" >
           <source src="assets/img/audio5-1.ogg" type="audio/ogg">
           <source src="assets/img/audio5-1.mp3" type="audio/mpeg">
           Tu navegador no soporta elementos de audio.
@@ -334,7 +334,7 @@
        <!--Fin Navegacion-->
     
     </div>
-   <audio controls autoplay>
+   <audio audio id="audio" controls="controls" onloadeddata="playPreguntas6()" >
           <source src="assets/img/audio5.ogg" type="audio/ogg">
           <source src="assets/img/audio5.mp3" type="audio/mpeg">
           Tu navegador no soporta elementos de audio.
