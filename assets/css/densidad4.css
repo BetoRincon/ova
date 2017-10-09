@@ -84,6 +84,9 @@
 p[id^="p"]{
     visibility: hidden;
 }
-img[id^='img']{
+div[id^='img']{
+    visibility: hidden;
+}
+#traslado1, #traslado2, #despeje1, #despeje2, #lineaRoja, #lineaRoja3,#traslado3, #X, #despeje3{
     visibility: hidden;
 }
