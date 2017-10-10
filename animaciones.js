@@ -80,9 +80,9 @@ function playPreguntas2() {
     masterTl /* Acá Juan, el primer número es el tiempo del efecto, el autoAlpha es la opa
     cidad y el último número es el retraso. Es el retraso el que modifica*/
             .to($('.superior'),2,{autoAlpha:1},1)
-        .to($('.columna1 > #densidad'), 1.2, { autoAlpha: 1 }, '+=10')
-        .to($('.columna1 > #lista'), 1.2, { autoAlpha: 1 }, '+=4')
-        .to($('.columna2 > #densidad'), 1.2, { autoAlpha: 1 }, '+=20')
+        .to($('.columna1 > #densidad'), 1.2, { autoAlpha: 1 }, '+=13')
+        .to($('.columna1 > #lista'), 1.2, { autoAlpha: 1 }, '+=8')
+        .to($('.columna2 > #densidad'), 1.2, { autoAlpha: 1 }, '+=21')
         .to($('.columna2 > #lista'), 1.2, { autoAlpha: 1 }, '+=4')
 }
 
